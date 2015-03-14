@@ -1,0 +1,170 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Noah B. Grossman</title>
+        <link rel="stylesheet" href="css/foundation/foundation.min.css" />
+        <link rel="stylesheet" href="css/portfolioTemplate.css">
+        <link rel="stylesheet" href="css/vendor/animate.css">
+        <link rel="stylesheet" href="css/vendor/captionjs.min.css"/>
+        <link rel="stylesheet" href="css/accordionEdits.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link href='http://fonts.googleapis.com/css?family=Coming+Soon|Source+Sans+Pro|Lato:300|Open+Sans:300|Roboto:100|Lakki+Reddy|Source+Code+Pro:300|Dekko' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr.js"></script>
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/vendor/jquery.caption.min.js"></script>
+        <script src="js/foundation/foundation.min.js"></script>
+        <script src="js/foundation/foundation.accordion.js"></script>
+    </head>
+    <body>
+      <div class="row">
+        <div class="small-12 medium-4 large-6 columns namelogo">
+          <h1>Noah Grossman</h1>
+        </div>
+        <div class="small-12 medium-8 large-6 columns">
+          <div class="nav-bar">
+            <ul class="button-group">
+              <li><a href="#about" class="button">About</a></li>
+              <li><a href="#work" class="button">Work</a></li>
+              <li><a href="#contact" class="button">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <div class="hero">
+        <div class="row">
+          <div class="large-12 columns intro-text">
+            <p id='descriptor' class='animated'>Front-End Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about">
+        <div class="medium-6 large-8 columns">
+          <h4 id="about">About</h4>
+          <p>
+            Hi, I'm Noah. I like to design and build things. Right now, my main project revolves around developing and marketing a flight-action game called DASH, which you can learn more about below.
+          </p>
+          <p>
+            I'll be graduating from Cornell University's <a href='http://infosci.cornell.edu/academics'>Information Science</a> department (ISST) through Engineering this coming May and am looking to take my talents to a company where I can make a real impact.
+          </p>
+        </div>
+        <div class="medium-6 large-4 columns" id="facePic">
+          <img src="images/facePic.png">
+        </div>
+      </div>
+
+      <div class="row work">
+        <hr>
+        <div class="large-12 columns">
+          <h4 id="work">Work</h4>
+
+          <dl id='listOfWork' class="accordion small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-accordion>
+            <dd class="accordion-navigation">
+              <a href="#panel1b">
+                <img class="caption works" data-caption="<h5>DASH</h5><p class='cap'>A Cross-Platform Flight-Action Game</p>" src="images/works/dash.png">
+              </a>
+              <div id="panel1b" class="content">
+                <p>
+                    <a href='http://dash-game.com'>DASH</a> is a fast-paced action-platformer where your sole movement mechanic is an aerial dash attack. Rated “Best in Show” by IndieHangover.com at the 2014 Boston Festival of Indie Games, DASH won the 'Most Polished Game' and 'Audience Favorite' awards at Cornell's annual Game Design Initiative Showcase and is the highest-rated game ever developed through the game design program. Built with LibGDX for Desktop, Android, and iOS, we are set for release on iOS and Android this summer (2015).
+                </p>
+                <p>
+                    As project lead, I am involved in all aspects of the game; from code to level design and polish to marketing, I make sure everything runs smoothly.
+                </p>
+                <div class="multiPic block-grid-1" id="picOne">
+                    <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'>
+                </div>
+                <p>
+                    One of the player's abilities is to slow down the game rate by entering slow-mo, which is activated on mobile by tap-and-holding anywhere on the screen and on Desktop by holding down the space-bar. This is a critical skill that comes in handy early on as levels quickly approach Super-Meat-Boy style difficulty. Since the vast majority of gamers simply refuse to read any kind of in-game text prompt, I had to find a way to elegantly teach players this ability. Since this is still a tutorial level, the player is still getting used to gameplay mechanics and is probably struggling to complete simple challenges. While definitely do-able by a skilled player, a novice will note the sudden spike in difficulty compared to previous levels and will probably have a tough time completing this level without slow-mo. If they ignored the prompt the first few tries, they will soon realize, 'Hey, maybe I should read this thing that keeps popping up every time I restart,' and will easily complete the level.
+                </p>
+                <div class="multiPic block-grid-1" id="picTwo">
+                    <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/poop.png'>
+                </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel2b">
+                  <img class="caption works" data-caption="caption here" src="images/works/3ds.png">
+              </a>
+              <div id="panel2b" class="content">
+                Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel3b">
+                  <img class="caption works" data-caption="caption here" src="images/works/freshAir.png">
+              </a>
+              <div id="panel3b" class="content">
+                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel4b">
+                  <img class="caption works" data-caption="caption here" src="images/works/ge.png">
+              </a>
+              <div id="panel4b" class="content">
+                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </dd>
+            <dd class="accordion-navigation">
+              <a href="#panel5b">
+                  <img class="caption works" data-caption="caption here" src="images/works/titanic.png">
+              </a>
+              <div id="panel5b" class="content">
+                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </dd>
+          </dl>
+
+      <div class="row contact">
+        <hr>
+        <div class="large-12 columns">
+          <h4 id="contact">Contact Me</h4>
+          <div class="large-4 columns">
+            <strong>Email</strong>: <a href="mailto:nbg22@cornell.edu">nbg22@cornell.edu</a>
+          </div>
+          <div class="large-4 columns">
+            <strong>LinkedIn</strong>: www.linkedin.com/pub/noah-grossman/66/355/487
+          </div>
+          <div class="large-4 columns">
+            <strong>Phone</strong>: 555-555-1234
+          </div>
+        </div>
+      </div>
+
+      <footer class="row">
+        <div class="large-12 columns">
+          <div class="row">
+            <div class="large-6 columns">
+              <p>© 2015 Noah Grossman</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Suscribe</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>      
+      <!-- // <script src="js/foundation/foundation.clearing.js"></script> -->
+
+
+<!-- 
+        <p>
+        My name is Noah Grossman and I'm a senior studying Information Science, Systems, and Technology with a minor in Business. I grew up at the Jersey Shore, just outside of Atlantic City, so I've been spoiled by the best beaches the East Coast has to offer. I originally came to Cornell as an Atmospheric Sciences major with my eyes set on becoming a Meteorologist, but soon realized a career in weather forecasting wasn't for me. I quickly switched to a Computer Science and eventually ended up in Info Sci focusing in Information Systems and Human Computer Interaction.
+
+I've got a wide range of interests, with some of my passions including game design, iOS development, and entrepreneurship. Over the past year, I've been developing a game called DASH with a group of 5 other Cornell students. The game is currently in Beta testing (come find me if you want to snag a version), and we plan on releasing on both iOS and Android this summer. I'm also working with some other Cornell students on a startup that focuses on bringing alternative sources of revenue to independent game developers.
+
+When I'm not busy working, you can find me checking the surf camera for my home break in Margate, NJ. This past winter break, I went down to a small group of islands in Panama called Bocas Del Toro (Google it, seriously...) and spent 6 days surfing world class waves in an uncrowded lineup. I still find myself imagining I'm down there eating $8 filet on the dock of some restaurant in the middle of paradise.
+</p>
+<p>I like to design and build things. Right now, my main project revolves around building and marketing a tablet-based action game, DASH, which you can learn more about below.</p> -->
+
+
+      <script src="js/descriptorAnimator.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+</html>
