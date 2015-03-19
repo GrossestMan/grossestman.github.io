@@ -50,6 +50,18 @@ img#coverPic {
 	.hero {
 		background-size:cover;
 	}
+	.nav-bar {
+		text-align: center;
+	}
+}
+.button-group>li>button, .button-group>li .button {
+	font-size: 18px;
+}
+.namelogo h1 {
+	font-size: 22px;
+}
+#navButtons {
+	margin-top: 6px;
 }
 .intro-text {
 	padding-top:50%;
@@ -90,9 +102,9 @@ img#coverPic {
 	text-align: center;
 }
 
-.accordion .accordion-navigation>a, .accordion dd>a {
+/*.accordion .accordion-navigation>a, .accordion dd>a {
 	height: 210px;
-}
+}*/
 img.works {
 	height: auto;
 }
@@ -152,15 +164,43 @@ p.cap {
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-#picOne {
+#dash_1 {
 	background-image: url(../images/screenshots/dash_1_overlay.png);
 }
-#picTwo {
+#dash_2 {
 	background-image: url(../images/screenshots/poop2.png);
+}
+#nami_1 {
+	background-image: url(../images/screenshots/nami_before.png);
+}
+#waad {
+	background-image: url(../images/screenshots/waad.jpg);
 }
 .multiPic img {
 	opacity: 0;
 }
 .multiPic img:hover {
 	opacity: 1;
+}
+
+.content {
+	padding: 25px !important;
+	padding-bottom: 15px !important;
+}
+.multiPic, .screenshotContainer {
+/*img.screenshot {*/
+	margin: 35px auto !important;
+}
+.content li {
+	height: initial;
+	overflow: initial;
+	margin-left: 15px;
+}
+.content a:hover {
+	opacity: 0.7;
+}
+
+img#freshAirConcept {
+	width: 60% !important;
+	margin: auto !important;
 }

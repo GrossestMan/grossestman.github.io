@@ -25,7 +25,7 @@
         </div>
         <div class="small-12 medium-8 large-6 columns">
           <div class="nav-bar">
-            <ul class="button-group">
+            <ul id="navButtons" class="button-group">
               <li><a href="#about" class="button">About</a></li>
               <li><a href="#work" class="button">Work</a></li>
               <li><a href="#contact" class="button">Contact</a></li>
@@ -63,57 +63,149 @@
           <h4 id="work">Work</h4>
 
           <dl id='listOfWork' class="accordion small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-accordion>
+            <!-- DASH -->
             <dd class="accordion-navigation">
-              <a href="#panel1b">
+              <a class="showContent" href="#panel1b">
                 <img class="caption works" data-caption="<h5>DASH</h5><p class='cap'>A Cross-Platform Flight-Action Game</p>" src="images/works/dash.png">
               </a>
               <div id="panel1b" class="content">
                 <p>
-                    <a href='http://dash-game.com'>DASH</a> is a fast-paced action-platformer where your sole movement mechanic is an aerial dash attack. Rated “Best in Show” by IndieHangover.com at the 2014 Boston Festival of Indie Games, DASH won the 'Most Polished Game' and 'Audience Favorite' awards at Cornell's annual Game Design Initiative Showcase and is the highest-rated game ever developed through the game design program. Built with LibGDX for Desktop, Android, and iOS, we are set for release on iOS and Android this summer (2015).
+                    <a href='http://dash-game.com'>DASH</a> is a fast-paced action-platformer where your sole movement mechanic is an aerial dash attack. Rated “Best in Show” by IndieHangover.com at the 2014 Boston Festival of Indie Games, DASH won the 'Most Polished Game' and 'Audience Favorite' awards at Cornell's annual Game Design Initiative Showcase and is the highest-rated game ever developed through the game design program. Built with LibGDX for Desktop, Android, and iOS, DASH are set for release on iOS and Android this summer (2015).
                 </p>
                 <p>
                     As project lead, I am involved in all aspects of the game; from code to level design and polish to marketing, I make sure everything runs smoothly.
                 </p>
-                <div class="multiPic block-grid-1" id="picOne">
+                <div class="multiPic block-grid-1" id="dash_1">
                     <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'>
                 </div>
                 <p>
                     One of the player's abilities is to slow down the game rate by entering slow-mo, which is activated on mobile by tap-and-holding anywhere on the screen and on Desktop by holding down the space-bar. This is a critical skill that comes in handy early on as levels quickly approach Super-Meat-Boy style difficulty. Since the vast majority of gamers simply refuse to read any kind of in-game text prompt, I had to find a way to elegantly teach players this ability. Since this is still a tutorial level, the player is still getting used to gameplay mechanics and is probably struggling to complete simple challenges. While definitely do-able by a skilled player, a novice will note the sudden spike in difficulty compared to previous levels and will probably have a tough time completing this level without slow-mo. If they ignored the prompt the first few tries, they will soon realize, 'Hey, maybe I should read this thing that keeps popping up every time I restart,' and will easily complete the level.
                 </p>
-                <div class="multiPic block-grid-1" id="picTwo">
-                    <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/poop.png'>
+                <div class="multiPic block-grid-1" id="dash_2">
+                    <img class="caption screenshot" data-caption="A Look At The Level Editor: Teaching The Player To Avoid Obstacles" src='images/screenshots/poop.png'>
                 </div>
             </dd>
+
+            <!-- 3DS -->
             <dd class="accordion-navigation">
-              <a href="#panel2b">
-                  <img class="caption works" data-caption="caption here" src="images/works/3ds.png">
+              <a class="showContent" href="#panel2b">
+                  <img class="caption works" data-caption="<h5>3 Day Startup</h5><p class='cap'>Hack Together A Startup In One Weekend</p>" src="images/works/3ds.png">
               </a>
               <div id="panel2b" class="content">
-                Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                
               </div>
             </dd>
+
+            <!-- FreshAir -->
             <dd class="accordion-navigation">
-              <a href="#panel3b">
-                  <img class="caption works" data-caption="caption here" src="images/works/freshAir.png">
+              <a class="showContent" href="#panel3b">
+                  <img class="caption works" data-caption="<h5>FreshAir</h5><p class='cap'>Air Quality Detection Interface</p>" src="images/works/freshAir.png">
               </a>
               <div id="panel3b" class="content">
-                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>
+                    <a href="http://invis.io/DH1NU21KF" target="blank">FreshAir</a> is an allergy detection and alert system that maps common airborne allergens via a crowdsourced network of sensors. I designed the app interface along with Emily Lutz and Maddy Butzbach as part of <a href="https://classes.cornell.edu/browse/roster/FA14/class/INFO/3450">INFO 3450 - Human Computer Interaction</a>.
+                </p>
+                <p>
+                    Our task was to solve a problem facing the world today by designing a novel system utilizing any technology that would be feasible within the next 10 years. After an interesting brainstorming session where we tossed around over 100 ideas (two words: bubble boy), we chose to tackle seasonal allergies through a detection and alert system composed of a wearable sensor and a mobile app. The sensors would be carried at all times to gather continuous air quality data throughout the day, which would be aggregated and transformed into an interactive map with overlays depicting the locations of relevant allergens.
+                </p>
+                <p>
+                    We broke up potential users into four personas:
+                    <ol>
+                        <li>Mild allergy sufferer</li>
+                        <li>Severe allergy sufferer</li>
+                        <li>Asthma-sufferer from polluted area</li>
+                        <li>Non-allergy sufferer</li>
+                    </ol>
+                </p>
+                <p>
+                    We asked them all sorts of questions such as <i>What is your worst experience/memory related to allergies?</i> and <i>What measures do you take to prevent and/or stop allergy attacks from happening?</i> to find out when, where, and how often they are affected by allergies/pollution as well as their degree of adversion to discover current motivations and techniques for handling them. We thought it would be interesting to interview a non-allergy sufferer as well to see if they had any additional insight or could think of other potential uses for this kind of system. After interviewing people fitting these personas, we constructed a Work Affinity Activity Diagram to group common themes from different responders. (Click the picture below for a higher fidelity PDF)
+                </p>
+
+                <div class="screenshotContainer">
+                    <a href="#" data-reveal-id="waadModal"><img class="caption screenshot" alt="Work Activity Affinity Diagram (WAAD)" src='images/screenshots/waad.jpg'></a>
+                </div>
+
+                <div id="waadModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <object data="documents/WAAD.pdf" type="application/pdf" width="100%" height="100%">
+                        <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/WAAD.pdf">click here</a> to download the PDF.</p>
+                    </object>   
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
+                <!-- <div class="screenshotContainer">
+                    <img class="caption screenshot" src="images/screenshots/waadPicFull.jpg" alt="waad paper">
+                </div> -->
+                <p>
+                    Through persona interviews, we found that people would not be willing to carry around a clunky sensor, especially since it had to be exposed at all times. We interviewed a wearable technology expert at Cornell University who said that although these types of sensors are not quite small enough today, the technology should evolve to the point where they can be accessorized into earrings, necklaces, and bracelets. This way, people could make a fashion statement by equipping everyday accessories with stylish, high-tech sensors.
+                </p>
+                <p>
+                    From here, I storyboarded '<a href="#" data-reveal-id="storyboardModal">A day in the life of John</a>' (our allergy sufferer), and we each created low-fidelity mockups of proposed concept designs.
+                </p>
+                <div class="screenshotContainer">
+                    <img id="freshAirConcept" class="caption screenshot" alt="Sensor/App/Glasses Proposed Concept" src='images/screenshots/finalConcept.png'>
+                    <img id="glassesConcept" class="caption screenshot" alt="Glasses Concept" src='images/screenshots/glassesConcept.jpg'>
+                </div>
+
+                <div id="storyboardModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <img src="images/screenshots/storyboard.jpg" alt="Storyboard">    
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
+                <p>
+                    In addition to the mobile  Glasses demonstration: http://youtu.be/sP0WNX1AxVs
+                </p>
               </div>
             </dd>
+
+            <!-- NAMI FL -->
             <dd class="accordion-navigation">
-              <a href="#panel4b">
-                  <img class="caption works" data-caption="caption here" src="images/works/ge.png">
+              <a class="showContent" href="#panel4b">
+                  <img class="caption works" data-caption="<h5>NAMI Finger Lakes</h5><p class='cap'>Website Redesign</p>" src="images/works/nami_fl.png">
               </a>
               <div id="panel4b" class="content">
-                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p>
+                    I re-designed a local mental illness support group's website for the final project of <a href="http://courses.cornell.edu/preview_course_nopop.php?catoid=18&coid=239860">INFO 2300 - Intermediate Web Design</a> along with Nitin Rajinikanth, Vincent Bello, and Angel Martinez. The original site was very condensed and text-heavy, with little design thought and a confusing navigation system. As project leader, I was in charge of gathering the client's needs and requirements, translating these into wireframes and low-fidelity sketches, designing the <a href="#" data-reveal-id="erModal">database schema</a>, and implementing much of the backend.
+                </p>
+
+                <div id="erModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <img src="images/screenshots/nami_er_diagram.png" alt="ER Diagram">    
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
+                <div class="multiPic block-grid-1" id="nami_1">
+                    <img class="caption screenshot" data-caption="New Home Page" src='images/works/nami_fl.png'>
+                </div>
+                <p>
+                    Unfortunately, our client had trouble setting up the database on their end and decided to outsource their site redesign, which can be seen at <a href="http://www.namifingerlakes.org/" target="blank">www.namifingerlakes.org</a>. I have uploaded a static version of <a href="nami_static/index.html" target="blank">our implementation</a> as well as a <a href="#" data-reveal-id="namiWriteupModal">full writeup</a> detailing our thought process and design choices. Please note that our site had strong backend capabilities but Github pages does not support php, so many buttons and features will not function properly.
+                </p>
+
+                <div id="namiWriteupModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <object data="documents/nami_writeup.pdf" type="application/pdf" width="100%" height="100%">
+                        <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/nami_writeup.pdf">click here</a> to download the PDF.</p>
+                    </object>   
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
               </div>
             </dd>
+
+            <!-- GE -->
             <dd class="accordion-navigation">
-              <a href="#panel5b">
+              <a class="showContent" href="#panel5b">
+                  <img class="caption works" data-caption="caption here" src="images/works/ge.png">
+              </a>
+              <div id="panel5b" class="content">
+                
+              </div>
+            </dd>
+
+            <!-- Titanic -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#panel5b">
                   <img class="caption works" data-caption="caption here" src="images/works/titanic.png">
               </a>
               <div id="panel5b" class="content">
-                Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                
               </div>
             </dd>
           </dl>

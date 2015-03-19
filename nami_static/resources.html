@@ -1,0 +1,873 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>NAMI Finger Lakes - Mental Health Support, Education, and Advocacy For Families Struggling with Mental Illness</title>
+<link rel="icon" type="image/png" href="graphics/favicon.ico">
+<META NAME="description" CONTENT="NAMI-Finger Lakes is the Ithaca, NY chapter of NAMI. We provide support and mental health information for families and friends of people diagnosed with major mental illnesses.  We seek to educate families and the public about mental illness and advocate for the families and their ill relatives.  As part of our programs, we provide one-on-one counseling; support groups; a free twelve-week Family-to-Family education course for families that helps family members understand and support their ill relatives while maintaining their own well-being.   Illness discussed by this course include major depression, Manic Depression (also known as bipolar disorder), schizophrenia, schizoaffective disorder, borderline personality disorder, panic disorder, OCD (Obsessive Compulsive Disorder), and Dual-Diagnosis (Co-occurring Brain and Addictive Disorders). Our members are also very familiar with Ithaca's excellent social services for people recovering from mental illness. Our office is within walking distance of Cornell University and Ithaca High School, and is across town from Ithaca College.  We are happy to help anyone who contacts us for help - this includes Tompkins County residents; residents of surrounding communities as Corning, Cortland, Binghamton, and Syracuse; and the parents of students attending Ithaca universities. Families from other parts of the US are welcome to contact us - we will do our best to help you.">
+<META NAME="keywords" CONTENT="NAMI, Ithaca New York, Finger Lakes, Mental Illness, Mental Health, Depression, Bipolar, schizophrenia, borderline personality disorder, OCD, schizoaffective disorder, dual diagnosis, anxiety disorders, Cornell, social services">
+<link rel="stylesheet" type="text/css" href="css_sheets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css_sheets/bootstrap-theme.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css_sheets/namifl_style.css">
+</head>
+
+<body>
+
+<?php
+  require_once('config.php');
+?>
+
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Home</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="aboutus.html" class="dropdown-toggle disabled" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="aboutus.html#history">History</a></li>
+			<li><a href="aboutus.html#yearataglance">Year at a Glance</a></li>
+            <!--<li><a href="aboutus.html#people">People</a></li>-->
+            <li><a href="aboutus.html#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="events.html" class="dropdown-toggle disabled" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="events.html#events">Events</a></li>
+            <li><a href="events.html#calendar">Calendar</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="newsletters.html" class="dropdown-toggle disabled" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
+		  <ul class="dropdown-menu">
+            <li><a href="newsletters.html#newsletters">Newsletters</a></li>
+            <li><a href="newsletters.html#news">NAMI in the News</a></li>
+            <li><a href="newsletters.html#reports">Annual Reports</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="resources.html" class="dropdown-toggle disabled" data-toggle="dropdown">Resources <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="resources.html#emergency">Emergency</a></li>
+            <li><a href="resources.html#donate">Donate</a></li>
+            <li><a href="resources.html#getinvolved">Get Involved</a></li>
+            <li><a href="resources.html#booksearch">Library</a></li>
+          </ul>
+        </li>
+	  </ul>
+	
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="header">
+<a href="index.html"><img src="graphics/Namicolor.jpg" width="246" height="109" style="float: left; position: absolute"></a>
+
+<div id="header-right">
+Support, Education, and Advocacy for Families Struggling with Mental Illnesss
+  </div> <!-- #header-right -->
+</div> <!-- .header -->
+
+
+
+
+<h1 style="margin-bottom: 20px">Resources</h1>
+
+<div class="cols-full">
+	<div class="well" id="emergency" style='background:white;width:1065px;margin-left:10px;'>
+		<h2><i class="fa fa-warning" style='color:#D61D1D;'></i> In case of Emergencies</h2>
+		<p>If you are in an emergency situation, then please consult our <b>Crisis File</b>. We've been there, and we'd like to help you.</p>
+		<p><a target="_blank" href="newsletters/Crisisfile.pdf" class="btn btn-danger" style="color: white; font-weight: bold;" role="button">Crisis/Support Information</a></p>      
+	</div>
+	<div class="col-left-half">
+		<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+					  Background Information on Mental Illness
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_1">What is Mental Illness?</a>
+					<br><a data-toggle="modal" data-target="#myModal_2">Recommended Books on Mental Illness, Family Issues, and Medications</a>
+					<br><a target="_blank" href="http://www.nami.org/template.cfm?section=About_Medications">General Information on Medications</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseTwo">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+					  Psychiatric Care
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_3">Psychiatric Care in Ithaca, NY and Nearby Cities</a>
+					<br><a data-toggle="modal" data-target="#myModal_4">Special Care, Recovery, and Diagnostic Facilities</a>
+					<br><a data-toggle="modal" data-target="#myModal_5">Resources for Checking Out Hospitals, Doctors, and Treatments</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseThree">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+					  Paying for Health Care
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_6">Paying for Health Care in Tompkins County</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseFour">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+					  Problems Associated with Mental Illness
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_7">Dual-Diagnosis (mentally ill & addicted to drugs/alcohol)</a>
+					<br><a data-toggle="modal" data-target="#myModal_8">Mental Illness and the Criminal Justice System</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseSix">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+					  Using the Web to Research Mental Illness Treatments and Medications
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSix" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_11">Searching the Scientific Literature & Web Sites</a>
+					<br><a data-toggle="modal" data-target="#myModal_12">Organizations Developing New Treatments & Medications</a>
+					<br><a data-toggle="modal" data-target="#myModal_13">Web sites for Borderline Personality Disorder Research and Treatment</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseSeven">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+					  Military Mental Health Care
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseSeven" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a target="_blank" href="http://www.nami.org/Template.cfm?Section=Veterans_Resources&Template=/ContentManagement/ContentDisplay.cfm&ContentID=53587&lstid=879">NAMI Veterans Resource Center</a>
+					<br><a target="_blank" href="http://www.ptsd.va.gov/">National Center for PTSD</a></p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseFive">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+					  Other Resources
+					</a>
+				  </h4>
+				</div>
+				<div id="collapseFive" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<p><a data-toggle="modal" data-target="#myModal_9">NY State and National NAMI</a>
+					<br><a data-toggle="modal" data-target="#myModal_10">Estate Planning - What Happens to my Ill Relative After I'm Gone?</a></p>
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</div>
+	
+	<div class="col-right-half">
+		<div class="well" id="donate" style='background:white;'>
+			<h3>Donate</h3>
+			<div class="h1-divider"></div>
+			<p>Donate directly <a target="_blank" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=4BwTXucbswqS5RXxnfu78gt6GYtVP9Llgfb7Ylg8rlLYqHqjaI-72KDe-Bu&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639">via Paypal</a>
+			 or make a purchase <a href="http://www.amazon.com/b?node=394379011&tag=nafila-20&camp=213281&creative=386453&linkCode=ur1&adid=0SWQRACTMGJY15AS7MF2&&ref-refURL=http%3A%2F%2Fwww.namifingerlakes.org%2Famazon.htm">via the Amazon link</a> and we will recieve 4% or more of your purchase.</p>
+			<div class="center-button">
+				<a target="_blank" href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=4BwTXucbswqS5RXxnfu78gt6GYtVP9Llgfb7Ylg8rlLYqHqjaI-72KDe-Bu&dispatch=5885d80a13c0db1f8e263663d3faee8db315373d882600b51a5edf961ea39639" class="btn btn-default" role="button" style="height:">
+				<img src="graphics/paypal_logo.png" width="60" alt="paypal"></a> 
+				<a target="_blank" href="http://www.amazon.com/b?node=394379011&tag=nafila-20&camp=213281&creative=386453&linkCode=ur1&adid=0SWQRACTMGJY15AS7MF2&&ref-refURL=http%3A%2F%2Fwww.namifingerlakes.org%2Famazon.htm" class="btn btn-default" role="button" style="height:35px"><img src="graphics/amazon_logo.png" width="60" alt="amazon"></a>
+			</div>
+		 </div>
+		<div class="well" id="getinvolved" style='background:white;'>
+			<h3>Get Involved</h3>
+			<div class="h1-divider"></div>
+			<p>Become an advocate. Register on NAMI.org to keep up with NAMI news and events.</p>
+			<div class="center-button"><a target="_blank" href="https://www.nami.org/template.cfm?section=become_a_member" class="btn btn-primary" role="button">Join NAMI Today </a>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+
+
+<!-- Modal_1-->
+<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">What is Mental Illness?</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+			Mental illnesses are biologically based brain disorders.  These disorders can severely disrupt a person's thinking, feeling, moods, ability to relate to others and capacity for coping with the demands of life.
+			<br><br><b>Mental illnesses are treatable brain disorders - they are not a judgment.</b>
+			<br><br>Mental illnesses can affect persons of any age, race, religion, or income. Mental illnesses are not the result of personal weakness, lack of character, or poor upbringing. They cannot be overcome through "will power" and are not related to a person's "character" or intelligence.
+			<br>Mental illnesses include such disorders as:
+			<ul>
+				<li><p>schizophrenia</p></li>
+				<li><p>major depression</p></li>
+				<li><p>bipolar disorder (also known as manic depression)</p></li>
+				<li><p>schizoaffective disorder</p></li>
+				<li><p>borderline personality disorder.</p></li>
+				<li><p>obsessive-compulsive disorder</p></li>
+			</ul>
+			The following links provide more information on mental illnesses:
+			<ul>
+				<li><p><p><a target='_blank' href='http://www.nami.org/template.cfm?section=About_Mental_Illness'>About Mental Illness</a> - NAMI National page describing what is (and isn't) mental illness.</p></p></li>
+				<li><p><a target='_blank' href='http://www.nami.org/Template.cfm?Section=By_Illness'>List of Mental Illnesses</a> - NAMI National web pages with detailed information on specific mental illnesses</p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal_2-->
+<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Recommended Books on Mental Illness, Family Issues, and Medications</h4>
+      </div>
+      <div class="modal-body">
+		<b>Schizophrenia, Depression, and Bipolar Disorder</b>
+		<ul>
+			<li><p><a target='_blank' href="http://www.amazon.com/Surviving-Schizophrenia-E-Fuller-Torrey/product-reviews/0060842598/ref=dp_cr_pr_redirect?ie=UTF8&showViewpoints=0&sortBy=byRankDescending">Surviving Schizophrenia : A Manual for Families, Patients, and Providers (5th Edition)</a></p></li>
+			<li><p><a target='_blank' href='http://www.amazon.com/gp/product/0060927828/qid=1149817865/sr=2-2/ref=pd_bbs_b_2_2/002-6474139-3698445?s=books&v=glance&n=283155'>Overcoming Depression (3rd Edition) </a></p></li>
+			<li><p><a target='_blank' href='http://www.amazon.com/gp/product/0465086632/qid=1149818086/sr=1-2/ref=sr_1_2/002-6474139-3698445?s=books&v=glance&n=283155'>Surviving Manic Depression</a></p></li>
+			<li><p><a target='_blank' href='http://www.amazon.com/gp/product/0140267638/qid=1149818430/sr=1-1/ref=sr_1_1/002-6474139-3698445?s=books&v=glance&n=283155'>Help Me, I'm Sad:  Recognizing, Treating, and Preventing Childhood & Adolescent Depression </a></p></li>
+		</ul>
+		<b>Family Issues</b>
+		<ul>
+			<li><p><a target='_blank' href="http://www.amazon.com/gp/product/0874776953/sr=8-1/qid=1149819559/ref=pd_bbs_1/002-6474139-3698445?_encoding=UTF8">When Someone You Love Has a Mental Illness </a></p></li>
+			<li><p><a target='_blank' href='http://www.amazon.com/gp/product/0967718902/002-6474139-3698445?v=glance&n=283155'>I Am Not Sick, I Don't Need Help! - Helping the Seriously Mentally Ill Accept Treatment, A Practical Guide for Families and Therapists </a></p></li>
+			<li><p><a target='_blank' href='http://www.mhanys.org/programs/pwpd/Family%20Support%20Tool%20Kit.pdf'>The Family Support Tool Kit: A Resource to Assist Professionals in Empowering Parents Living with Psychiatric Disabilities</a></p></li>
+		</ul>
+		<b>Medicatons</b>
+		<p>General Information:</p>
+		<ul>
+			<li><p><a target='_blank' href="http://www.amazon.com/gp/product/0060728914/sr=8-2/qid=1149820109/ref=sr_1_2/002-6474139-3698445?_encoding=UTF8">The Essential Guide to Psychiatric Drugs </a></p></li>
+			<li><p><a target='_blank' href='http://www.nimh.nih.gov/health/publications/mental-health-medications/index.shtml'>Mental Health Medications</a></p></li>
+		</ul>
+		<p>Detailed Information:</p>
+		<ul>
+			<li><p><a target='_blank' href="http://www.fda.gov/Drugs/default.htm">U.S. Food and Drug Administration Center for Drug Evaluation and Research</a></p></li>
+			<li><p><a target='_blank' href='http://www.accessdata.fda.gov/scripts/cder/drugsatfda/index.cfm'>Drugs@FDA </a></p></li>
+			<li><p><a target='_blank' href='hhttp://www.nami.org/Content/ContentGroups/Helpline1/Prescription_Drug_Patient_Assistance_Programs.htm'>Prescription Drug Assistance Program</a></p></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_3-->
+<div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Psychiatric Care in Ithaca, NY and Nearby Cities</h4>
+      </div>
+      <div class="modal-body">
+        <b>Ithaca</b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.tompkins-co.org/departments/detail.aspx?DeptID=28">Tompkins County Mental Health Services</a></p></li>
+			<li><p><a target="_blank" href="http://www.cayugamed.org/content.cfm?serviceID=39">Cayuga Medical Center Psychiatry & Behaviorial Health Services Department</a></p></li>
+			<li><p><a target="_blank" href="http://mhaedu.org/">The Mental Health Association in Tompkins County</a></p></li>
+			<li><p><a target="_blank" href="http://mindsmatter.dos.cornell.edu/">Cornell Minds Matter</a></p></li>
+			<li><p>Cornell University Office of Human Resources Employee Assistance Program</p></li>
+		</ul>
+		<b>Auburn, NY</b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.nami.org/Template.cfm?Section=Your_Local_NAMI&template=/CustomSource/LocalDetail.cfm&LocalID=0162b937-8400-43f9-be1b-bd4affc3ea65&StateID=NY">NAMI of Cayuga County</a></p></li>
+		</ul>
+		<b>Binghamton, NY </b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.naminys.org/affiliates/affiliates-by-county?cnty=Broome">NAMI-Broome County</a></p></li>
+			<li><p><a target="_blank" href="http://www.omh.ny.gov/omhweb/facilities/bipc/facility.htm">Greater Binghamton Health Center</a></p></li>
+		</ul>
+		<b>Buffalo, NY </b>
+		<ul>
+			<li><p><a target="_blank" href="http://namibuffalony.org/">National Alliance for the Mentally Ill in Buffalo and Erie County</a></p></li>
+			<li><p><a target="_blank" href="http://www.omh.ny.gov/omhweb/facilities/bupc/">Buffalo Psychiatric Center</a></p></li>
+			<li><p><a target="_blank" href="http://www.bakervictoryservices.org/">Baker Victory Services</a></p></li>
+			<li><p><a target="_blank" href="http://www.pathwaysforyou.org/">Pathways, Inc.</a></p></li>
+		</ul>
+		<b>Corning, NY</b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.chemungsteubennami.org/">NAMI of Chemung and Steuben Counties</a></p></li>
+		</ul>
+		<b>Cortland, NY</b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.nami.org/Template.cfm?Section=Your_Local_NAMI&Template=/CustomSource/AffiliateFinder.cfm">R.E.A.C.H. Cortland County AMI Inc.</a></p></li>
+		</ul>
+		<b>Elmira, NY </b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.arnothealth.org/st-josephs-hospital">St. Joseph's Hospital</a></p></li>
+			<li><p><a target="_blank" href="http://www.omh.ny.gov/omhweb/facilities/elpc/facility.htm">Elmira Psychiatric Center </a></p></li>
+		</ul>
+		<b>Rochester, NY </b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.tekstrong.com/nami/">NAMI-Rochester</a></p></li>
+			<li><p><a target="_blank" href="https://www.omh.ny.gov/omhweb/facilities/ropc/facility.htm">Rochester Psychiatric Center</a></p></li>
+			<li><p><a target="_blank" href="http://www.urmc.rochester.edu/psychiatry/clinical.aspx">Strong Memorial Hospital</a></p></li>
+		</ul>
+		<b>Syracuse, NY </b>
+		<ul>
+			<li><p><a target="_blank" href="http://www.namisyracuse.org/">NAMI-Promise</a></p></li>
+			<li><p><a target="_blank" href="http://www.omh.ny.gov/omhweb/facilities/hupc/facility.htm">Hutchings Psychiatric Center</a></p></li>
+			<li><p><a target="_blank" href="http://www.upstate.edu/psych/healthcare/psychclinics/">Upstate Medical's Psychiatric Unitl</a></p></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_4-->
+<div class="modal fade" id="myModal_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Special Care, Recovery, and Diagnostic Facilities</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+			<b>Eastern US</b>
+			<ul>	
+				<li><p>Compos Mentis - Working Towards Wellness- this is an Ithaca-area program starting up as a day program in May, 2007 at the Cayuga Nature Center farm.  It is inspired by the Gould Farm model, and was co-founded by NAMI-Finger Lakes member Abby Eller. </p></li>
+				<li><p><a target="_blank" href="http://www.gouldfarm.org/">Gould Farm</a> -  an excellent farm-based recovery/rehabilitation program located in Massachusetts.   Focuses on adults 18 & older.   Several support group members have sent ill relatives there with excellent results (very friendly, professional, and supportive).</p></li>
+				<li><p><a target="_blank" href="http://www.cooperriis.org/">Coopwe-Riis</a>- a "spinoff" from Gould Farm located in western North Carolina.</p></li>
+				<li><p><a target="_blank" href="http://www.hopewell.cc/">Hopewell Inn</a>- a therapeutic farm community located in Mesopotamia, Ohio, (just east of Cleveland).  Same treatment model as Gould Farm.</p></li>
+			</ul>
+			<b>Western US</b>
+			<ul>
+				<li><p><a target="_blank" href="http://cvnfarm.org/">Casas de Vida Nueva</a>- Located in Albuquerque, NM.  Started by a mother whose son attended Gould Farm, and it follows the Gould/Cooper-Riis models.  Employs a permaculture philosophy in its farming practices.  They are currently working to start up their program.</p></li>
+			</ul>
+			Finally, there are some New York-based organizations that could help families dealing with eating disorders and mental illness in older adults:
+			<ul>
+				<li><p><a target="_blank" href="http://opheliasplace.org/">Ophelia's Place</a>-  Syracuse-based Ophelia's Place is a resource and support center for those suffering from an eating disorder.  It was started by a mother who nearly lost two daughters to anorexia, and it  provides information on treatment, insurance, education, prevention and support groups for family, friends and sufferers.  </p></li>
+				<li><p><a target="_blank" href="http://sharonhospital.com/">Sharon Hospital Behavioral Health Center</a>- a special  center focused on elderly patients,.  They can do testing to determine whether problems are due to mental illness or to other causes such as Alzheimer's and/or dementia. </p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_5-->
+<div class="modal fade" id="myModal_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Resources for Checking out Hospitals, Doctors, and Treatments</h4>
+      </div>
+      <div class="modal-body">
+		<ul>	
+			<li><p><a target="_blank" href="http://www.appi.org/Home">American Psychiatric Association Practice Guidelines for Treatment of Psychiatric Disorders</a></p></li>
+			<li><p><a target="_blank" href="http://www.medscape.com/pages/editorial/public/pguidelines/index-psychiatry">Psychiatry Practice Guidelines </a></p></li>
+			<li><p><a target="_blank" href="http://hospitals.nyhealth.gov/">Ratings for New York State Hospitals </a></p></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_6-->
+<div class="modal fade" id="myModal_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Paying for Health Care in Tompkins County</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+		Many families do not have the financial resources to pay for their ill relative's psychiatric treatment.  It is also very common these individuals to have additional health problems unrelated to their mental illness. 
+		<br><br><a target="_blank" href='http://www.crcfl.net/'>The Cancer Resource Center of the Finger Lakes</a> has produced Paying for Health Care in Tompkins County, an excellent guide to the many local and state options for obtaining medications and insurance coverage.   Regarding cancer, people suffering from mental illnesses are also at a higher risk of developing cancer.
+		<br><br>In addition, we recommend seeing the people at  <a target="_blank" href='http://mhaedu.org/'> Mental Health Association in Tompkins County</a>, as they have considerable knowledge of government aid programs.
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_7-->
+<div class="modal fade" id="myModal_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Dual-Diagnosis (both diagnosed with a mental illnets & addicted to drugs/alcohol)</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			An estimated 29% of the mentally ill abuse either alcohol or drugs.  To recover fully, the person needs treatment for both problems.  The best approach is to treat both problems simultaneously, which requires teamwork between the addiction counselors and the psychiatrists.
+			<br><br>Also note that  Tompkins County Mental Services has a dual diagnosis counselor on staff (Mr. Shayne Jayne).
+			<ul>
+				<li><p><a target="_blank" href="http://www.mentalhealthamerica.net/">Fact Sheet on Dual-Diagnosis</a></p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_7-->
+<div class="modal fade" id="myModal_7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Dual-Diagnosis (both diagnosed with a mental illnets & addicted to drugs/alcohol)</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			An estimated 29% of the mentally ill abuse either alcohol or drugs.  To recover fully, the person needs treatment for both problems.  The best approach is to treat both problems simultaneously, which requires teamwork between the addiction counselors and the psychiatrists.
+			<br><br>Also note that  Tompkins County Mental Services has a dual diagnosis counselor on staff (Mr. Shayne Jayne).
+			<ul>
+				<li><p><a target="_blank" href="http://www.mentalhealthamerica.net/">Fact Sheet on Dual-Diagnosis</a></p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_8-->
+<div class="modal fade" id="myModal_8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Mental Illness and the Criminal Justice System</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			Estimates show that 10 to 15 percent of jail and prison inmates have a serious and persistent mental illness. In New York State that translates into between 10,000 and 15,000 persons. Many of these people are in jail for minor violations, and should be treated through the mental health system, rather than sent to prison. 
+			<br><br>The following links could help if your ill family member is arrested: 
+			<ul>
+				<li><p><a target="_blank" href="http://www.naminys.org/images/stories/Documents/person_arrested_mental_illness.pdf">How to Help When a Mentally Ill Person Is Arrested </a></p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_9-->
+<div class="modal fade" id="myModal_9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">NY State and National NAMI Organizations</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			<a target="_blank" href="http://www.naminys.org/">NAMI New York State</a>- the New York State NAMI is very active & supportive of the local NAMI chapters.  Their web site contains lots of good New York-specific information.   Of particular note are: 
+			<ul>
+				<li><p><a target="_blank" href="http://www.namifingerlakes.org/Documents/Navigating%20the%20Mental%20Health%20Maze%20NAMI%20NYC%20Metro.pdf">Navigating the Mental Health Care System  </a>- excellent overview of issues that families will face in dealing with their relative's illness.  Note that this was originally written in 2001, so the contact information may be out of date.</p></li>
+				<li><p><a target="_blank" href="http://www.naminys.org/navigating-the-system/22-pact">PACT</a></p></li>
+				<li><p><a target="_blank" href="http://www.naminys.org/treatment-and-support/17-medication-therapy">Survival Skills for Taking Medications</a></p></li>
+			</ul>
+			<p><a target="_blank" href="http://www.nami.org/">NAMI National</a></p>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_10-->
+<div class="modal fade" id="myModal_10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Estate Planning - What Happens to my Ill Relative After I'm Gone?</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			<a target="_blank" href="http://www.nami.org/Content/NavigationMenu/Find_Support/Legal_Support/Special_Needs_Estate_Planning/SNEP_Primer.htm">Special Needs Estate Planning Guidance System</a>- NAMI National's  web pages on how to plan your estate so that your ill relative is cared for after you are gone. 
+			<br><br>Issues discussed include administration (who handle the estate);  issues your family must address (goals for your loved one);  information gathering;  and an overview of trusts. 
+			<br><br>Of particular interest are Special Needs Trusts.  These trusts let you leave money to your ill relative without endangering their eligibility for government benefits.  It also gives you a mechanism for "metering" money to relatives who, due to their illness, cannot responsibly handle large sums of money.
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_11-->
+<div class="modal fade" id="myModal_11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Searching Medical and Scientific Literature Websites</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			<a target="_blank" href="http://www.medscape.com/">MedLine Plus</a>-  a government directory to health information - good way to get pointers to useful and relevant web pages throughout the world. This includes on-line dictionaries of medical terms and medications.
+			<a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed">PubMed</a>-  lets you search the abstracts of all major medical or biomedical scientific journals.  It is a fast way to scan the latest research.  Some of the cited papers are available for free online (though some charge for reprints).   A cheaper alternative is to  contact Cornell's libraries to see if they carry the cited journal in print or as an electronic journal (which lets you xerox it or download it to your USB drive).
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_12-->
+<div class="modal fade" id="myModal_12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Organizations Developing New Treatments and Medications</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			<a target="_blank" href="http://bbrfoundation.org/">NARSAD</a> - (National Alliance for Research on Schizophrenia and Affective Disorders) supports scientific research to find better treatments and ultimately prevent severe mental illnesses.   The supported research covers all areas of mental illness - not just schizophrenia and bipolar/depression.
+			<br><a target="_blank" href="http://www.stanleyresearch.org/dnn/">The Stanley Medical Research Institute</a> - a research organization focused on schizophrenia and bipolar disorder.  Approximately seventy-five percent of  their  expenditures go towards the development of new treatments for schizophrenia and bipolar disorder. The remaining funds are earmarked for research on the causes of these illnesses.  Their web sites describes the ongoing research, and it also has a very good Links to over web sites dealing with schizophrenia and bipolar disorder. 
+			<br><a target="_blank" href="http://www.nimh.nih.gov/index.shtml">The National Institute of Mental Health</a> - The National Institute of Mental Health is the major federal funding agency for research on mental illness.  Their web site has a lot of information on all mental illnesses, as well as pointers to the researchers they are funding.  They also have active internal research programs that need clinical trial volunteers. 
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_13-->
+<div class="modal fade" id="myModal_13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Web Sites for Borderline Personality Disorder</h4>
+      </div>
+      <div class="modal-body">
+		<p>
+			Borderline Personality Disorder is a relatively new mental illness classification, and there is much ongoing research to develop both  reliable diagnostic methods and effective treatments.  These links list organizations and web pages devoted to BPD research and treatment.
+			<ul>	
+				<li><p><a target="_blank" href="http://www.bpdresourcecenter.org/">Borderline Personality Disorder Resource Center</a> - (a New York-Presbyterian Hospital web site).  This site provides basic information on Borderline Personality Disorder plus pointers the treatment programs at the hospital's Personality Disorders Institute. They also list a 48-minute documentary film on BPD (available for $20 through their web site).</p></li>
+				<li><p><a target="_blank" href="http://www.tara4bpd.org/dyn/index.php">TARA APD</a> - The Treatment and Research Advancements Association for Personality Disorder, TARA APD, is a 501 C3 not-for-profit organization whose mission is to foster education and research in the field of personality disorder, specifically but not exclusively Borderline Personality Disorder (BPD),  Their web site provides pointers to ongoing BPD research projects and support resources.</p></li> 
+				<li><p><a target="_blank" href="http://icahn.mssm.edu/research/labs">Mount Sinai Special Evaluation Program for Mood and Personality Disorders</a> - The Mount Sinai Department of Psychiatry has an active clinical research program on personality disorders, and has ongoing clinical trials of new treatments.  Their web site includes some very thorough information on the latest BPD treatments. </p></li>
+				<li><p><a target="_blank" href="http://www.mountsinai.org/patient-care/service-areas?url=clinical_services/dbt.html">Mount Sinai Dialectical Behavior Therapy Program</a> - Dialectical Behavior Therapy is one of the current treatments for BPD, and this web page describes Mount Sinai's program in  this area. </p></li>
+				<li><p><a target="_blank" href="http://www.borderlinedisorders.com/">Personality Disorders Institute of the Weill Medical College</a> - The Institute lists BPD  information both for the general public and medical professionals.  </p></li>
+			</ul>
+		</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="h1-divider"></div>
+<h1 id="booksearch"> Library </h1>
+<div class="h1-divider"></div>
+<h3 style="float:left;">Books available on location</h3>
+<form class="form-inline library-form" role="form" action="resources.php#booksearch" method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" name="titleSearch" placeholder="Enter Search Term Here">
+    </div>
+    <input type="submit" class="btn btn-primary" name="search" value="Search Books">
+</form>
+
+<?php
+    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+    if ($mysqli->errno) {
+            print($mysqli->error);
+            exit();
+    }
+
+    //Search books
+    if(isset($_POST['search'])) {
+        $searchQuery = "%".$_POST['titleSearch']."%";
+        $bookQuery = "SELECT Books.bookID, Books.title, Books.year, Authors.fName, Authors.lName, Tags.tag
+                  FROM WrittenBy
+                    INNER JOIN Books
+                    INNER JOIN Authors
+                    INNER JOIN TaggedBy
+                    INNER JOIN Tags
+                  WHERE WrittenBy.bookID = Books.bookID &&
+                        WrittenBy.authorID = Authors.authorID &&
+                        TaggedBy.bookID = Books.bookID &&
+                        TaggedBy.tag = Tags.tag &&
+                        (Books.title LIKE '$searchQuery' OR Authors.fName LIKE '$searchQuery'
+                            OR Authors.lName LIKE '$searchQuery' OR Tags.tag LIKE '$searchQuery'
+                            OR Books.year LIKE '$searchQuery')
+                  ORDER BY Books.bookID;";
+    $bookResult = $mysqli->query($bookQuery);
+    $prevID = -1;
+    $tags = array();
+    $titles = array();
+    $years = array();
+    $fNames = array();
+    $lNames = array();
+    $tagsLists = array();
+    $bookID = -1;
+    $firstRow = true;
+    $title = $year = $fName = $lName = $tag = "";
+    while($row = $bookResult->fetch_assoc()) {
+        $bookID = $row['bookID'];
+        if($bookID != $prevID) {
+            if(!$firstRow) {
+                array_push($titles, $title);
+                array_push($years, $year);
+                array_push($fNames, $fName);
+                array_push($lNames, $lName);
+                array_push($tagsLists, $tags);
+                $tags = array();
+            } else { $firstRow = false; }
+            $title = $row['title'];
+            $year = $row['year'];
+            $fName = $row['fName'];
+            $lName = $row['lName'];
+        }
+        array_push($tags, $row['tag']);
+        $prevID = $bookID;
+    }
+    //TODO: add last book info
+    array_push($titles, $title);
+    array_push($years, $year);
+    array_push($fNames, $fName);
+    array_push($lNames, $lName);
+    array_push($tagsLists, $tags);
+    
+    $i=0;
+    echo "<table class='table table-bordered table-hover'>";
+    echo "<thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>";
+    echo "<tbody>";
+    foreach($tagsLists as $tags) {
+        $title = $titles[$i];
+        $year = $years[$i];
+        $fName = $fNames[$i];
+        $lName = $lNames[$i];
+        echo "<tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>";
+        foreach($tags as $tag) {
+            echo "<span class='tag'>$tag</span> ";
+        }
+        echo "</td></tr>";
+        $i++;
+    }
+    echo "</tbody></table>";
+    }
+    else {
+    // Display Library info
+    $bookQuery = "SELECT Books.bookID, Books.title, Books.year, Authors.fName, Authors.lName, Tags.tag
+                  FROM WrittenBy
+                    INNER JOIN Books
+                    INNER JOIN Authors
+                    INNER JOIN TaggedBy
+                    INNER JOIN Tags
+                  WHERE WrittenBy.bookID = Books.bookID &&
+                        WrittenBy.authorID = Authors.authorID &&
+                        TaggedBy.bookID = Books.bookID &&
+                        TaggedBy.tag = Tags.tag
+                  ORDER BY Books.bookID;";
+    $bookResult = $mysqli->query($bookQuery);
+    $prevID = -1;
+    $tags = array();
+    $titles = array();
+    $years = array();
+    $fNames = array();
+    $lNames = array();
+    $tagsLists = array();
+    $bookID = -1;
+    $firstRow = true;
+    $title = $year = $fName = $lName = $tag = "";
+    while($row = $bookResult->fetch_assoc()) {
+        $bookID = $row['bookID'];
+        if($bookID != $prevID) {
+            if(!$firstRow) {
+                array_push($titles, $title);
+                array_push($years, $year);
+                array_push($fNames, $fName);
+                array_push($lNames, $lName);
+                array_push($tagsLists, $tags);
+                $tags = array();
+            } else { $firstRow = false; }
+            $title = $row['title'];
+            $year = $row['year'];
+            $fName = $row['fName'];
+            $lName = $row['lName'];
+        }
+        array_push($tags, $row['tag']);
+        $prevID = $bookID;
+    }
+    //TODO: add last book info
+    array_push($titles, $title);
+    array_push($years, $year);
+    array_push($fNames, $fName);
+    array_push($lNames, $lName);
+    array_push($tagsLists, $tags);
+    
+    $i=0;
+    echo "<table class='table table-bordered table-hover'>";
+    echo "<thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>";
+    echo "<tbody>";
+    foreach($tagsLists as $tags) {
+        $title = $titles[$i];
+        $year = $years[$i];
+        $fName = $fNames[$i];
+        $lName = $lNames[$i];
+        echo "<tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>";
+        foreach($tags as $tag) {
+            echo "<span class='tag'>$tag</span> ";
+        }
+        echo "</td></tr>";
+        $i++;
+    }
+    echo "</tbody></table>";    
+    }
+    
+    // TODO: Only display the following edit information if admin is logged in
+    // TODO: make this edit form collapsable
+    
+    $tags = array();
+    $authorIDs = array();
+    
+    $tagQuery = "SELECT *
+                 FROM Tags;";
+    $tagResult = $mysqli->query($tagQuery);
+    while($row = $tagResult->fetch_row()) {
+        $tag = $row[0];
+        array_push($tags, $tag);
+    }
+    $authorQuery = "SELECT authorID
+                    FROM Authors;";
+    $authorResult = $mysqli->query($authorQuery);
+    while($row = $authorResult->fetch_row()) {
+        $authorID = $row[0];
+        array_push($authorIDs, $authorID);
+    }
+    if(isset($_SESSION['logged_user']) && $_SESSION['logged_user'] == ADMIN_USERNAME) {
+?>
+
+<h1>Add or edit a book</h1>
+<div class="well" style="background: white; margin-top:20px">
+
+<form role="form" action="adminEdit.php" method="post">
+    <div class="form-group">
+        <label for="bookTitle">Book title</label>
+        <input type="text" class="form-control" name="title" id="bookTitle" placeholder="Book title" required>
+    </div>
+    <div class="form-group">
+        <label for="bookYear">Year published</label>
+        <input type="number" class="form-control" name="year" id="bookYear" placeholder="Year" min=1900 required>
+    </div>
+    <label>Author(s):</label><br>
+    Select existing author(s) and/or add your own: <br>
+    <div class="checkbox cols-full">
+    <?php 
+        foreach($authorIDs as $authorID) {
+            $authorQuery = "SELECT fName, lName
+                            FROM Authors
+                            WHERE authorID = \"$authorID\";";
+            $authorResult = $mysqli->query($authorQuery);
+            $row = $authorResult->fetch_row();
+            $author = $row[0]." ".$row[1];
+            ?>
+            <div class="col-third">
+                <label><input type="checkbox" name="existingAuthors[]" value= <?php echo $authorID; ?>> <?php echo $author; ?> </label>
+            </div>
+    <?php } ?>
+    </div>
+    <label>Add new author(s): </label><br>
+    <i class="fa fa-question"></i> (Note: Enter the author(s)'s first and last names, separated by a comma (,). If there is more than one author, enter each author on a separate line.) <br>
+        
+    <textarea name="newAuthors" class="form-control" rows="3" placeholder="John, Doe"></textarea><br>
+    <label>Tags: </label><br>
+    Select existing tag(s) and/or add your own: <br>
+    <div class="checkbox cols-full">
+    <?php 
+        foreach($tags as $tag) { ?>
+            <div class="col-third">
+                <label><input type="checkbox" name="existingTags[]" value= <?php echo $tag; ?>> <?php echo $tag; ?> </label>
+            </div>
+    <? } ?>
+    </div>
+    <label>Add new tags: </label><br>
+    <i class="fa fa-question"></i> (Note: Add as many new tags as you'd like, entering each tag on a separate line) <br>
+    <textarea name="newTags" class="form-control" rows="3" placeholder="tag"></textarea> <br>
+    <input type="submit" class="btn btn-primary btn-lg" name="addBook" value="Add Book">
+</form>
+</div>
+
+<?php
+    }
+    $mysqli->close();
+?>
+
+
+
+
+
+
+
+<div class="footer">
+Many thanks to <a href="http://www.lightlink.com">Lightlink</a> for hosting our site.
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+    $(window).scroll( function () {
+    	if ($(this).scrollTop() > 122) {
+    		if (!$(".navbar-default").hasClass("fixed-navbar"))
+    			$(".navbar-default").addClass("fixed-navbar");
+    	} else{
+    		if ($(".navbar-default").hasClass("fixed-navbar"))
+    			$(".navbar-default").removeClass("fixed-navbar");
+    	}
+    	console.log($(this).scrollTop());
+
+    });
+</script>
+</body>
+</html>

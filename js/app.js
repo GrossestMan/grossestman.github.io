@@ -33,7 +33,7 @@ $(document).ready(function(){
 });
 
 // Accordion custom behavior
-$("dd a").click(function () {
+$("dd a.showContent").click(function () {
 	var content = $(this.parentElement).find(".content");
     var clickedIsDown = false;
     if (content.is(':visible')) {
@@ -41,7 +41,7 @@ $("dd a").click(function () {
     }
     $("dd").find(".content").slideUp(200);
     if (!clickedIsDown) {
-        content.slideDown(200);
+        content.slideDown(500);
     }
 });
 
