@@ -4,6 +4,10 @@
 	font-family: "Komika Axis";
 	src: url("../fonts/komikaAxis.ttf");
 }
+@font-face {
+	font-family: "Myriad Std Sketch";
+	src: url("../fonts/Myriad-Std-Sketch.ttf");
+}
 body {
     margin: auto;
 }

@@ -10,7 +10,7 @@ var descriptors = [
                   ];
 var fonts = [
                 'Lato,Monaco',
-                'Myriad Std',
+                'Myriad Std Sketch',
                 'Marker Felt',
                 'Komika Axis, Arial Rounded MT Bold',
                 'PT Serif, Palatino, serif',
