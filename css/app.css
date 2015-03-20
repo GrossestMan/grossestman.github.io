@@ -1,25 +1,10 @@
-.section {
-	clear: both;
+/*Author: Noah Grossman*/
+
+@font-face {
+	font-family: "Komika Axis";
+	src: url("../fonts/komikaAxis.ttf");
 }
-#title {
-	position: relative;
-	float: left;
-}
-#nav {
-	position: relative;
-	float: right;
-}
-
-
-
-
 body {
-    margin: auto;
-}
-/*h1#lead, h1#descriptor {
-    display: inline;
-}*/
-p#blank {
     margin: auto;
 }
 p#descriptor {
@@ -27,19 +12,11 @@ p#descriptor {
     font-weight: 200;
     font-family: Lato, Monaco;
 }
-h1#hi {
-    margin: 40px 50px;
-}
 .delay {
     -webkit-animation-duration: 1.3s;
     -moz-animation-duration: 1.3s;
     -webkit-animation-delay: 2s;
     -moz-animation-delay: 2s;
-}
-img#coverPic {
-    margin: 150px 80px;
-    display: inline;
-    border-radius: 500px;
 }
 
 .hero {
@@ -168,7 +145,7 @@ p.cap {
 	background-image: url(../images/screenshots/dash_1_overlay.png);
 }
 #dash_2 {
-	background-image: url(../images/screenshots/poop2.png);
+	background-image: url(../images/screenshots/dash_8_editor.png);
 }
 #nami_1 {
 	background-image: url(../images/screenshots/nami_before.png);
@@ -203,4 +180,10 @@ p.cap {
 img#freshAirConcept {
 	width: 60% !important;
 	margin: auto !important;
+}
+figcaption {
+	bottom: -26px;
+}
+#speedyChalupaModal {
+	width: 190px;
 }

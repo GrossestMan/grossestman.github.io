@@ -1,19 +1,19 @@
+// Author: Noah Grossman
+
 var descriptors = [
                     'Front-End Developer',
                     'UX Designer',
                     'Surfer',
                     'Game Developer',
                     'Aspiring Entrepreneur',
-                    'Apple Enthusiast',
                     'Hacker'
                   ];
 var fonts = [
                 'Lato,Monaco',
                 'Myriad Std',
                 'Marker Felt',
-                'Lakki Reddy, Arial Rounded MT Bold',
-                'Dekko, Coming Soon, Baskervile, Palatino',
-                'Helvetica Neue',
+                'Komika Axis, Arial Rounded MT Bold',
+                'PT Serif, Palatino, serif',
                 'Source Code Pro'
             ];
 // List of indices to access descriptors and fonts
@@ -39,6 +39,11 @@ var changeDescriptor = function() {
     var i = Math.floor(Math.random()*spots.length);
     $('#descriptor').text(descriptors[spots[i]]);
     $('#descriptor').css('font-family', fonts[spots[i]]);
+    if(fonts[spots[i]].indexOf("Komika Axis") > -1) {
+        $('#descriptor').css("font-size", "48px");
+    } else {
+        $('#descriptor').css("font-size", "55px");
+    }
     spots.splice(i,1);
 }
 

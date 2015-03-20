@@ -138,6 +138,7 @@
 				$figcaption.css({
 					'margin-bottom': '0',
 					'bottom': -target_height,
+					// 'bottom': '-26px',
 				});
 			}
 

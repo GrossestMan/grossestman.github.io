@@ -1,3 +1,5 @@
+// Author: Noah Grossman
+
 $(document).foundation({
   accordion: {
     // specify the class used for accordion panels
