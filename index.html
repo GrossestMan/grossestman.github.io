@@ -79,14 +79,14 @@
                 <p>
                     As project lead, I am involved in all aspects of the game; from code to level design and polish to marketing, I make sure everything runs smoothly.
                 </p>
-                <div class="multiPic block-grid-1" id="dash_1">
+                <!-- <div class="multiPic block-grid-1" id="dash_1">
                     <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'>
                 </div>
                 <p>
                     One of the player's abilities is to slow down the game rate by entering slow-mo, which is activated on mobile by tap-and-holding anywhere on the screen and on Desktop by holding down the space-bar. This is a critical skill that comes in handy early on as levels quickly approach Super-Meat-Boy style difficulty. Since the vast majority of gamers simply refuse to read any kind of in-game text prompt, I had to find a way to elegantly teach players this ability. Since this is still a tutorial level, the player is still getting used to gameplay mechanics and is probably struggling to complete simple challenges. While definitely do-able by a skilled player, a novice will note the sudden spike in difficulty compared to previous levels and will probably have a tough time completing this level without slow-mo. If they ignored the prompt the first few tries, they will soon realize, "Hey, maybe I should read this thing that keeps popping up every time I die," and will easily complete the level.
-                </p>
-                <div class="multiPic block-grid-1" id="dash_2">
-                    <img class="caption screenshot" data-caption="A Look At The Level Editor: Teaching The Player To Avoid Obstacles" src='images/screenshots/dash_8.png'>
+                </p> -->
+                <div class="multiPic block-grid-1" id="dash_1">
+                    <img class="caption screenshot" data-caption="A Look At The Level Editor: Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'>
                 </div>
                 <p>
                     To design levels, we built a custom built level editor with <a href="http://d3js.org/">d3</a> to make any level imaginable. Each level designer has their own technique, but I usually follow the same creative process:
@@ -107,12 +107,12 @@
                         <li>Finalize level</li>
                     </ol>
                 </p>
-                <p>
-                    Each level has an artifact (the token with blue flames) strategically placed in a hard to reach area that can help you unlock new worlds quicker. While not required to complete a level, they add an extra layer of difficulty to each level for the more skilled players, who get rewarded with an extra game mode once they 'catch em all'. I made the following level look deceivingly easy, but it takes some strategy to figure out. First, some background: your sole movement mechanic is dashing at targetables (enemies, lanterns, artifacts) by tapping/clicking on them. You collect artifacts by simply passing through them, but you drop them in place if you are hit by an enemy. The shielded enemies block the entrance from the right side and will 'punch' you with their shields if you get too close. Also, the blue birds on the top left charge up a projectile fireball that they shoot at you. Now, the player isn't given the inside scoop like I just gave you, but see if you can figure out what to do.
-                </p>
                 <div class="screenshotContainer">
                     <img class="caption screenshot" data-caption="Artifact Challenge" src='images/screenshots/dash_6.png'>
                 </div>
+                <p>
+                    Each level has an artifact (the token with blue flames) strategically placed in a hard to reach area that can help you unlock new worlds quicker. While not required to complete a level, they add an extra layer of difficulty to each level for the more skilled players, who get rewarded with an extra game mode once they 'catch em all'. I made the following level look deceivingly easy, but it takes some strategy to figure out. First, some background: your sole movement mechanic is dashing at targetables (enemies, lanterns, artifacts) by tapping/clicking on them. You collect artifacts by simply passing through them, but you drop them in place if you are hit by an enemy. The shielded enemies block the entrance from the right side and will 'punch' you with their shields if you get too close. Also, the blue birds on the top left charge up a projectile fireball that they shoot at you. Now, the player isn't given the inside scoop like I just gave you, but see if you can figure out what to do.
+                </p>
                 <p>
                     <a href="http://www.dash-game.com">DASH</a> has 4 gorgeous landscapes with 5 unique enemy types and lots of twists and turns along the way. We're getting pumped for a big release this summer as it is the result of over a year's hard work by the entire <a href="#" data-reveal-id="speedyChalupaModal">Speedy Chalupa</a> crew: Sofonias Assefa, <a href="https://www.behance.net/karen00zhou">Karen Zhou</a>, Robin Martin, Roger Chen, Steven Mah, and myself.
                 </p>
@@ -235,12 +235,26 @@
                 </div>
 
                 <p>
-                    Seeing a
+                    We thought it would be cool to add in a <a href="http://youtu.be/sP0WNX1AxVs">glasses component</a> that would highlight affected areas through a colored overlay projected directly through the lens. It would take in the same data used for the map to cover your entire field of vision so that as you look around, you can see exactly where the affected areas are. This technology would ideally integrate directly with any pair of glasses you owned, and the overlay feature could be turned on/off to the user's liking. After performing concept validation on our test personas, the glasses and the map proved popular. They liked how the glasses provided immediate information about their surroundings, which complemented the ability to plan routes around affected areas in advance by using the map.
                 </p>
+                <div class="screenshotContainer">
+                    <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses1.jpg'>
+                </div>
+                <div class="screenshotContainer">
+                    <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses2.jpg'>
+                </div>
+                <div class="screenshotContainer">
+                    <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses3.jpg'>
+                </div>
                 <p>
-                    In addition to the mobile  Glasses demonstration: http://youtu.be/sP0WNX1AxVs
+                    After finalizing our concept, we drew sketches and wireframes of the app and produced high fidelity mockups in Photoshop and Illustrator to put together an interactive <a href="http://invis.io/DH1NU21KF" target="blank">prototype</a> using <a href="http://www.invisionapp.com/">InVision</a>. You can view our poster for presentations <a href="#" data-reveal-id="freshAirModal">here</a>.
                 </p>
-
+                 <div id="freshAirModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <object data="documents/poster.pdf" type="application/pdf" width="100%" height="100%">
+                        <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/poster.pdf">click here</a> to download the PDF.</p>
+                    </object>   
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
                 <hr>
               </div>
             </dd>
@@ -288,7 +302,7 @@
                 <hr>
 
                 <p>
-                    As part of <a href="http://mimno.infosci.cornell.edu/info3300/">INFO 3300 - Data Driven Web Applications</a>, I created a visualization of passenger survival rate on the Titanic based on demographic data incuding age, social class, price of ticket, and gender. Passengers are broken up into 3 tiers based on their social class, with upper class on the top, descending to lower class on the bottom. Within each class, the points are plotted based on their ticket fare. You can view the full source code on <a href="#">Github</a>.
+                    As part of <a href="http://mimno.infosci.cornell.edu/info3300/">INFO 3300 - Data Driven Web Applications</a>, I created a visualization of passenger survival rate on the Titanic based on demographic data incuding age, social class, price of ticket, and gender. Passengers are broken up into 3 tiers based on their social class, with upper class on the top, descending to lower class on the bottom. Within each class, the points are plotted based on their ticket fare. You can view the full source code on <a href="https://github.com/GrossestMan/Titanic">Github</a>.
                 </p>
                 <div class="screenshotContainer">
                     <img class="caption screenshot" alt="Titanic Visualization" src='images/screenshots/titanicFull.png'>

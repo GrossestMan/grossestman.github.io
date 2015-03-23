@@ -202,7 +202,8 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 		<?php
 		if( isset( $_POST['startdate'] )) {
 			$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-			if ($mysqli->errno) {
+			if ($mysqli->
+				<!--errno) {
 				print($mysqli->error);
 				exit();
 			}
@@ -212,10 +213,10 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			$reportQuery = "SELECT * FROM  Reports WHERE year = $year";
 			$newsResults = $mysqli->query($newsQuery);
 			if($newsResults) {
-				print("<div class='h1-divider'></div>");
-				print("<h2> News Articles from $year</h2>");
-				print("<div class='h1-divider'></div>");
-				print("<ul>");
+				print("--><div class='h1-divider'></div>
+				<h2> News Articles from 2013</h2>
+				<div class='h1-divider'></div>
+				<!--print("<ul>");
 				$result = false;
 				while ($array = $newsResults ->fetch_row()) {
 					print("<li><p>$array[2]</p></li>");
@@ -228,9 +229,9 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			}
 			$newsletterResults = $mysqli->query($newslettersQuery);
 			if($newsletterResults) {
-				print("<div class='h1-divider'></div>");
-				print("<h2> Newsletters from $year</h2>");
-				print("<div class='h1-divider'></div>");
+				print("<div class='h1-divider'></div>");-->
+				<h2> Newsletters from 2013</h2>
+				<div class='h1-divider'></div> <!--
 				print("<ul>");
 				$result = false;
 				while($array = $newsletterResults->fetch_row()) {
@@ -243,8 +244,8 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			$reportResults = $mysqli->query($reportQuery);
 			if($reportResults) {
 				print("<div class='h1-divider'></div>");
-				print("<h2> Annual report from $year</h2>");
-				print("<div class='h1-divider'></div>");
+				print("--><h2> Annual report from 2013</h2>
+				<div class='h1-divider'></div><!--
 				print("<ul>");
 				$result = false;
 				while($array = $reportResults->fetch_row()) {
@@ -257,7 +258,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			$mysqli->close();
 		}
 
-		?>
+		?>-->
 	</div>
 
 	</div> <!-- .col-left-half -->

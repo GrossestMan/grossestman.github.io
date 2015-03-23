@@ -616,7 +616,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
     <input type="submit" class="btn btn-primary" name="search" value="Search Books">
 </form>
 
-<?php
+<!--<?php
     $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     if ($mysqli->errno) {
             print($mysqli->error);
@@ -678,23 +678,20 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
     array_push($tagsLists, $tags);
     
     $i=0;
-    echo "<table class='table table-bordered table-hover'>";
-    echo "<thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>";
-    echo "<tbody>";
+    echo "--><table class='table table-bordered table-hover'>
+    <thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>
+    <tbody><!--
     foreach($tagsLists as $tags) {
         $title = $titles[$i];
         $year = $years[$i];
         $fName = $fNames[$i];
         $lName = $lNames[$i];
-        echo "<tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>";
-        foreach($tags as $tag) {
-            echo "<span class='tag'>$tag</span> ";
-        }
-        echo "</td></tr>";
-        $i++;
-    }
-    echo "</tbody></table>";
-    }
+        echo "--><tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>
+        <!--foreach($tags as $tag) {
+            echo "--><span class='tag'>$tag</span> 
+        </td></tr>
+    </tbody></table>
+    <!--}
     else {
     // Display Library info
     $bookQuery = "SELECT Books.bookID, Books.title, Books.year, Authors.fName, Authors.lName, Tags.tag
@@ -746,24 +743,20 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
     array_push($tagsLists, $tags);
     
     $i=0;
-    echo "<table class='table table-bordered table-hover'>";
-    echo "<thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>";
-    echo "<tbody>";
+    echo "--><table class='table table-bordered table-hover'>
+    <thead><tr><th>Book title</th><th>Year published</th><th>Author</th><th>Tags</th></tr></thead>
+    <tbody><!--
     foreach($tagsLists as $tags) {
         $title = $titles[$i];
         $year = $years[$i];
         $fName = $fNames[$i];
         $lName = $lNames[$i];
-        echo "<tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>";
-        foreach($tags as $tag) {
-            echo "<span class='tag'>$tag</span> ";
-        }
-        echo "</td></tr>";
-        $i++;
-    }
-    echo "</tbody></table>";    
-    }
+        echo "--><tr><td>$title</td><td>$year</td><td>$fName $lName</td><td style='line-height:175%'>
+        <span class='tag'>$tag</span>
+        </td></tr>
+        </tbody></table>
     
+    <!--
     // TODO: Only display the following edit information if admin is logged in
     // TODO: make this edit form collapsable
     
@@ -786,7 +779,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
     }
     if(isset($_SESSION['logged_user']) && $_SESSION['logged_user'] == ADMIN_USERNAME) {
 ?>
-
+-->
 <h1>Add or edit a book</h1>
 <div class="well" style="background: white; margin-top:20px">
 
@@ -802,7 +795,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
     <label>Author(s):</label><br>
     Select existing author(s) and/or add your own: <br>
     <div class="checkbox cols-full">
-    <?php 
+   <!-- <?php 
         foreach($authorIDs as $authorID) {
             $authorQuery = "SELECT fName, lName
                             FROM Authors
@@ -814,7 +807,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
             <div class="col-third">
                 <label><input type="checkbox" name="existingAuthors[]" value= <?php echo $authorID; ?>> <?php echo $author; ?> </label>
             </div>
-    <?php } ?>
+    <?php } ?>-->
     </div>
     <label>Add new author(s): </label><br>
     <i class="fa fa-question"></i> (Note: Enter the author(s)'s first and last names, separated by a comma (,). If there is more than one author, enter each author on a separate line.) <br>
@@ -837,10 +830,6 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 </form>
 </div>
 
-<?php
-    }
-    $mysqli->close();
-?>
 
 
 

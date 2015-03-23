@@ -109,7 +109,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 					<li><a target="_blank" href="newsletters/summer_06.pdf">Summer 2006</a></li>
 					<li><a target="_blank" href="newsletters/winter_06.pdf">Winter 2006</a></li>
 					<li><a target="_blank" href="newsletters/fall_05.pdf">Fall 2005</a></li> -->
-				<?php
+				<!--<?php
 					// Instead of displaying the links like we have above, we will generate them using the database
 					// This allows for dynamic display
 					//TODO: Use the configuration file to get valid database credentials
@@ -149,7 +149,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 							newsletterCount = <?php echo $count; ?>;
 						</script>
 						<input type="hidden" class="btn btn-primary btn-lg" name="deleteNewsletter" value="Delete Newsletter" style="margin: 15px 0 0 0">
-					</form>
+					</form>-->
 				</ul>
 			</div>
 			<div id="annualreports">
@@ -157,7 +157,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			<h2 style="text-align: center;">Annual Reports</h2>
 			<div class="well"  id="reports" style="background:white;">
 				<ul>
-					<?php
+					<!--<?php
 						$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 						if ($mysqli->errno) {
 							print($mysqli->error);
@@ -211,7 +211,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 		<div class="col-left-half" id="news">
 			<h2 style="text-align: center;">NAMI Finger Lakes in the News</h2>
 			<div class="panel-group" id="accordion">
-			<?php
+			<!--<?php
 			$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 			if ($mysqli->errno) {
 				print($mysqli->error);
@@ -241,7 +241,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 
 
 			$mysqli->close();
-			?>
+			?>-->
 			  <div class="panel panel-default">
 				<div class="panel-heading" data-parent="#accordion" data-toggle="collapse" data-target="#collapseOne">
 				  <h4 class="panel-title">
@@ -384,7 +384,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 	</div>
 
 	<!-- Form to upload (/delete?) newsletters-->
-	<?php
+	<!--<?php
 	// TODO: sort entries by season/year.. New entries placed at bottom of list.. This is done when displaying the newsletters (different section)
 	$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 	if ($mysqli->errno) {
@@ -402,7 +402,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			document.getElementsByName("reportID")[i].setAttribute('type','radio');
 		}
 		document.getElementsByName("deleteReport")[0].setAttribute('type','submit');
-	</script>
+	</script>-->
 	
 	<h1>Upload a newsletter</h1>
 	<div class="well" style="background: white; margin-top:20px">
@@ -437,10 +437,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			</div>						
 		</form>
 	</div>
-	<?php
-	}
-	$mysqli->close();
-	?>
+	
 	<!-- TODO: Form to add (/edit?) news -->
 	
 	

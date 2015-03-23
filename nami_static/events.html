@@ -116,24 +116,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			// Nitin: here's the code to grab the year from the date stored in the database...
 			// $dateArr = explode("-", trim($date));
 			// $year = $dateArr[0];
-		$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-    	if ($mysqli->errno) {
-            print($mysqli->error);
-            exit();
-    	}
-    	$eventQuery = "SELECT * FROM Events";
-    	$eventResults = $mysqli->query($eventQuery);
-    	if($eventResults) {
-    		while($array = $eventResults->fetch_row()) {
-    			print("<p><b>$array[1]: $array[2]</b></p>");
-    			print("<p>$array[3]</p>");
-    		}
-    	}
-    	else {
-    		print("<p><b> No Upcoming Events </b></p>");
-    	}
-
-		?>
+		
 	</div>
 	
 	

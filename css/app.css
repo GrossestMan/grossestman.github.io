@@ -146,11 +146,11 @@ p.cap {
 	background-size: 100%;
 }
 #dash_1 {
-	background-image: url(../images/screenshots/dash_1_overlay.png);
+	background-image: url(../images/screenshots/dash_1_editor.png);
 }
-#dash_2 {
+/*#dash_2 {
 	background-image: url(../images/screenshots/dash_8_editor.png);
-}
+}*/
 #nami_1 {
 	background-image: url(../images/screenshots/nami_before.png);
 }
@@ -190,4 +190,8 @@ figcaption {
 }
 #speedyChalupaModal {
 	width: 190px;
+}
+.glasses {
+	max-width: 400px;
+	margin: auto !important;
 }
