@@ -77,6 +77,9 @@ p#descriptor {
 	dd:nth-child(3n) > .content {
 	    margin-left: -213%;
 	}
+	.contactMe {
+		text-align: center;
+	}
 	
 }
 #facePic {
@@ -194,4 +197,10 @@ figcaption {
 .glasses {
 	max-width: 400px;
 	margin: auto !important;
+}
+.icons {
+	max-width: 100px;
+}
+.contactMe {
+	margin: 15px auto;
 }
