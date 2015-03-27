@@ -1,0 +1,1 @@
+Please excuse the sloppy code. GitHub pages doesn't support PHP so I converted each of the pages to HTML and hastily commented out / deleted chunks of code that rendered poorly in the process.
