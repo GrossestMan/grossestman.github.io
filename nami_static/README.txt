@@ -1,1 +1,1 @@
-Please excuse the sloppy code. GitHub pages doesn't support PHP so I converted each of the pages to HTML and hastily commented out / deleted chunks of code that rendered poorly in the process.
+Please excuse the sloppy code. GitHub pages doesn't support PHP so I converted each of the pages to HTML and hastily commented out / deleted chunks of code that rendered poorly in the process. You can view the original source code in the folder titled 'Original_PHP_files'

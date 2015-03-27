@@ -26,47 +26,47 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="index.html" class="dropdown-toggle disabled" data-toggle="dropdown">Home</a>
+          <a href="index.php" class="dropdown-toggle disabled" data-toggle="dropdown">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="aboutus.html" class="dropdown-toggle disabled" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
+          <a href="aboutus.php" class="dropdown-toggle disabled" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="aboutus.html#history">History</a></li>
-			<li><a href="aboutus.html#yearataglance">Year at a Glance</a></li>
-            <!--<li><a href="aboutus.html#people">People</a></li>-->
-            <li><a href="aboutus.html#contact">Contact</a></li>
+            <li><a href="aboutus.php#history">History</a></li>
+			<li><a href="aboutus.php#yearataglance">Year at a Glance</a></li>
+            <!--<li><a href="aboutus.php#people">People</a></li>-->
+            <li><a href="aboutus.php#contact">Contact</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="events.html" class="dropdown-toggle disabled" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
+          <a href="events.php" class="dropdown-toggle disabled" data-toggle="dropdown">Events <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="events.html#events">Events</a></li>
-            <li><a href="events.html#calendar">Calendar</a></li>
+            <li><a href="events.php#events">Events</a></li>
+            <li><a href="events.php#calendar">Calendar</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="newsletters.html" class="dropdown-toggle disabled" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
+          <a href="newsletters.php" class="dropdown-toggle disabled" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
 		  <ul class="dropdown-menu">
-            <li><a href="newsletters.html#newsletters">Newsletters</a></li>
-            <li><a href="newsletters.html#news">NAMI in the News</a></li>
-            <li><a href="newsletters.html#reports">Annual Reports</a></li>
+            <li><a href="newsletters.php#newsletters">Newsletters</a></li>
+            <li><a href="newsletters.php#news">NAMI in the News</a></li>
+            <li><a href="newsletters.php#reports">Annual Reports</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav">
         <li class="dropdown">
-          <a href="resources.html" class="dropdown-toggle disabled" data-toggle="dropdown">Resources <i class="fa fa-angle-down"></i></a>
+          <a href="resources.php" class="dropdown-toggle disabled" data-toggle="dropdown">Resources <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
-            <li><a href="resources.html#emergency">Emergency</a></li>
-            <li><a href="resources.html#donate">Donate</a></li>
-            <li><a href="resources.html#getinvolved">Get Involved</a></li>
-            <li><a href="resources.html#booksearch">Library</a></li>
+            <li><a href="resources.php#emergency">Emergency</a></li>
+            <li><a href="resources.php#donate">Donate</a></li>
+            <li><a href="resources.php#getinvolved">Get Involved</a></li>
+            <li><a href="resources.php#booksearch">Library</a></li>
           </ul>
         </li>
 	  </ul>
@@ -75,7 +75,7 @@
 </nav>
 
 <div class="header">
-<a href="index.html"><img src="graphics/Namicolor.jpg" width="246" height="109" style="float: left; position: absolute"></a>
+<a href="index.php"><img src="graphics/Namicolor.jpg" width="246" height="109" style="float: left; position: absolute"></a>
 
 <div id="header-right">
 Support, Education, and Advocacy for Families Struggling with Mental Illnesss
