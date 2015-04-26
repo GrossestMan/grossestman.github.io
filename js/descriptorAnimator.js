@@ -1,7 +1,7 @@
 // Author: Noah Grossman
 
 var descriptors = [
-                    'Front-End Developer',
+                    'Full-Stack Web Developer',
                     'UX Designer',
                     'Surfer',
                     'Game Developer',
