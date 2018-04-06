@@ -1,20 +1,12 @@
 /*Author: Noah Grossman*/
 
-@font-face {
-	font-family: "Komika Axis";
-	src: url("../fonts/komikaAxis.ttf");
-}
-@font-face {
-	font-family: "Myriad Std Sketch";
-	src: url("../fonts/MyriadStd-Sketch.otf");
-}
 body {
     margin: auto;
 }
 p#descriptor {
     font-size: 55px;
     font-weight: 200;
-    font-family: Lato, Monaco;
+    font-family: Avenir, Lato, Monaco, Helvetica Neue, sans-serif;
 }
 .delay {
     -webkit-animation-duration: 1.3s;
@@ -53,6 +45,7 @@ p#descriptor {
 	.intro-text {
 		padding-top:30%;
 	}
+	/*WEEEEEEEEEE This is for the width of the expanded content panel (clicking on a DD)*/
 	.content {
 		width: 204.7%;
 	}
@@ -84,11 +77,13 @@ p#descriptor {
 }
 #facePic {
 	text-align: center;
+	float: right;
 }
 
-/*.accordion .accordion-navigation>a, .accordion dd>a {
-	height: 210px;
-}*/
+.accordion .accordion-navigation>a, .accordion dd>a {
+	/*height: 210px;*/
+	/*background: #DADDD8;*/
+}
 img.works {
 	height: auto;
 }
@@ -166,10 +161,11 @@ p.cap {
 .multiPic img:hover {
 	opacity: 1;
 }
-
-.content {
-	padding: 25px !important;
-	padding-bottom: 15px !important;
+@media only screen and (min-width: 1026px) {
+	.content {
+		padding: 25px !important;
+		padding-bottom: 15px !important;
+	}
 }
 .multiPic, .screenshotContainer {
 /*img.screenshot {*/
@@ -182,14 +178,6 @@ p.cap {
 }
 .content a:hover {
 	opacity: 0.7;
-}
-
-img#freshAirConcept {
-	width: 60% !important;
-	margin: auto !important;
-}
-figcaption {
-	bottom: -26px;
 }
 #speedyChalupaModal {
 	width: 190px;

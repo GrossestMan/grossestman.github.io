@@ -1,1 +1,752 @@
-<!doctype HTML><html> <head> <meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <meta name="description" content="Noah Grossman's Personal Portfolio"> <meta name="author" content="Noah Grossman"> <title>Noah B. Grossman</title> <link rel="stylesheet" href="css/foundation/foundation.min.css"/> <link rel="stylesheet" href="css/portfolioTemplate.min.css"> <link rel="stylesheet" href="css/vendor/animate.css"> <link rel="stylesheet" href="css/vendor/captionjs.min.css"/> <link rel="stylesheet" href="css/accordionEdits.min.css"> <link rel="stylesheet" href="css/app.min.css"> <link href='http://fonts.googleapis.com/css?family=Lato:300|Source+Code+Pro:300|PT+Serif' rel='stylesheet' type='text/css'> <script src="js/vendor/modernizr.js"></script> <script src="js/vendor/jquery-1.11.2.min.js"></script> <script src="js/vendor/fastclick.js"></script> <script src="js/vendor/jquery.caption.min.js"></script> <script src="js/foundation/foundation.min.js"></script> <script src="js/foundation/foundation.accordion.js"></script> </head> <body> <div class="row"> <div class="small-12 medium-4 large-6 columns namelogo"> <h1>Noah Grossman</h1> </div><div class="small-12 medium-8 large-6 columns"> <div class="nav-bar"> <ul id="navButtons" class="button-group"> <li><a href="#about" class="button">About</a></li><li><a href="#work" class="button">Work</a></li><li><a href="#contact" class="button">Contact</a></li></ul> </div></div></div><div class="hero"> <div class="row"> <div class="large-12 columns intro-text"> <p id='descriptor' class='animated'>Full-Stack Web Developer</p></div></div></div><div class="row about"> <div class="medium-6 large-8 columns"> <h4 id="about">About</h4> <p> Hi, I'm Noah. I like to design and build things. My latest project revolves around developing and marketing a flight-action game called DASH, which you can learn more about below. </p><p> I'll be graduating from Cornell University's <a href='http://infosci.cornell.edu/academics'>Information Science</a> department (ISST) through Engineering this coming May and am looking to take my talents to a company where I can make a real impact. </p></div><div class="medium-6 large-4 columns" id="facePic"> <img src="images/facePic.png"> </div></div><div class="row work"> <hr> <div class="large-12 columns"> <h4 id="work">Work</h4> <dl id='listOfWork' class="accordion small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-accordion> <dd class="accordion-navigation"> <a class="showContent" href="#dashPanel"> <img class="caption works" data-caption="<h5>DASH</h5><p class='cap'>A Cross-Platform Flight-Action Game</p>" src="images/works/dash.png"> </a> <div id="dashPanel" class="content"> <hr> <p> <a href='http://dash-game.com'>DASH</a> is a fast-paced action-platformer where your sole movement mechanic is an aerial dash attack. Rated “Best in Show” by IndieHangover.com at the 2014 Boston Festival of Indie Games, DASH won the 'Most Polished Game' and 'Audience Favorite' awards at Cornell's annual Game Design Initiative Showcase and is the <a href="http://gdiac.cs.cornell.edu/gallery/index.php">highest-rated game</a> ever developed through the game design program. Built with LibGDX for Desktop, Android, and iOS, DASH is set for release on iOS and Android this summer (2015). </p><p> As project lead, I am involved in all aspects of the game; from code to level design and polish to marketing, I make sure everything runs smoothly. </p><!-- <div class="multiPic block-grid-1" id="dash_1"> <img class="caption screenshot" data-caption="Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'> </div><p> One of the player's abilities is to slow down the game rate by entering slow-mo, which is activated on mobile by tap-and-holding anywhere on the screen and on Desktop by holding down the space-bar. This is a critical skill that comes in handy early on as levels quickly approach Super-Meat-Boy style difficulty. Since the vast majority of gamers simply refuse to read any kind of in-game text prompt, I had to find a way to elegantly teach players this ability. Since this is still a tutorial level, the player is still getting used to gameplay mechanics and is probably struggling to complete simple challenges. While definitely do-able by a skilled player, a novice will note the sudden spike in difficulty compared to previous levels and will probably have a tough time completing this level without slow-mo. If they ignored the prompt the first few tries, they will soon realize, "Hey, maybe I should read this thing that keeps popping up every time I die," and will easily complete the level. </p>--> <div class="multiPic block-grid-1" id="dash_1"> <img class="caption screenshot" data-caption="A Look At The Level Editor: Teaching The Player Slow-Mo" src='images/screenshots/dash_1.png'> </div><p> To design levels, we built a custom built level editor with <a href="http://d3js.org/">d3</a> to make any level imaginable. Each level designer has their own technique, but I usually follow the same creative process: <ol start="0"> <li>Pray for creative juices to start flowing</li></ol> <ol> <li>Jot down ideas on types of challenges to be included, which emotions I'm trying to play off the player (eg. fast-paced=highly focused, tense, alert), and which secondary objectives may fit well with the level</li><li>Sketch out core challenge on pen and paper</li><li>Translate core challene into editor</li><li>Playtest level</li><li>Make necessary adjustments, or possibly scrap level entirely and return to step 2</li><li>Add rest of level</li><li>Send level through peer review process</li><li>Make final adjustments before testing and polish obstacles, enemy placement, and other level elements</li><li>Playtest on friends and Beta testers</li><li>Finalize level</li></ol> </p><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Artifact Challenge" src='images/screenshots/dash_6.png'> </div><p> Each level has an artifact (the token with blue flames) strategically placed in a hard to reach area that can help you unlock new worlds quicker. While not required to complete a level, they add an extra layer of difficulty to each level for the more skilled players, who get rewarded with an extra game mode once they 'catch em all'. I made the following level look deceivingly easy, but it takes some strategy to figure out. First, some background: your sole movement mechanic is dashing at targetables (enemies, lanterns, artifacts) by tapping/clicking on them. You collect artifacts by simply passing through them, but you drop them in place if you are hit by an enemy. In this level, the shielded enemies block the entrance from the right side and will 'punch' you with their shields if you get too close. Also, the blue birds on the top left charge up a projectile fireball that they shoot at you. Now, the player isn't given the inside scoop like I just gave you, but see if you can figure out what to do. </p><p> <a href="http://www.dash-game.com">DASH</a> has 4 gorgeous landscapes with 5 unique enemy types and lots of twists and turns along the way. We're getting pumped for a big release this summer as it is the result of over a year's hard work by the entire <a href="#" data-reveal-id="speedyChalupaModal">Speedy Chalupa</a> crew: Sofonias Assefa, <a href="https://www.behance.net/karen00zhou">Karen Zhou</a>, Robin Martin, Roger Chen, Steven Mah, and myself. </p><div id="speedyChalupaModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <img src="images/speedyChalupa.png" alt="Speedy Chalupa Logo"> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Skyline" src='images/screenshots/dash_2.png'> </div><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Introducing Aegis (Shielded) Enemies" src='images/screenshots/dash_3.png'> </div><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Timing Is Key" src='images/screenshots/dash_4.png'> </div><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Climbing The Ladder From Hell" src='images/screenshots/dash_5.png'> </div><div class="screenshotContainer"> <img class="caption screenshot" data-caption="Show Me Ya Moves" src='images/screenshots/dash_7.png'> </div><hr> </dd> <dd class="accordion-navigation"> <a class="showContent" href="#namiPanel"> <img class="caption works" data-caption="<h5>NAMI Finger Lakes</h5><p class='cap'>Website Redesign</p>" src="images/works/nami_fl.png"> </a> <div id="namiPanel" class="content"> <hr> <p> I re-designed a local mental illness support group's website for the final project of <a href="http://courses.cornell.edu/preview_course_nopop.php?catoid=18&coid=239860">INFO 2300 - Intermediate Web Design</a> along with Nitin Rajinikanth, Vincent Bello, and Angel Martinez. The original site was very condensed and text-heavy, with little design thought and a confusing navigation system. As project leader, I was in charge of gathering the client's needs and requirements, translating these into wireframes and low-fidelity sketches, designing the <a href="#" data-reveal-id="erModal">database schema</a>, and implementing much of the backend. </p><div id="erModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <img src="images/screenshots/nami_er_diagram.png" alt="ER Diagram"> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><div class="multiPic block-grid-1" id="nami_1"> <img class="caption screenshot" data-caption="New Home Page" src='images/works/nami_fl.png'> </div><p> Unfortunately, our client had trouble setting up the database on their end and decided to outsource their site redesign, which can be seen at <a href="http://www.namifingerlakes.org/" target="blank">www.namifingerlakes.org</a>. I have uploaded a static version of <a href="nami_static/index.html" target="blank">our implementation</a> as well as a <a href="#" data-reveal-id="namiWriteupModal">full writeup</a> detailing our thought process and design choices. Please note that our site had strong backend capabilities but Github pages does not support PHP, so several features will not function properly. </p><div id="namiWriteupModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <object data="documents/nami_writeup.pdf" type="application/pdf" width="100%" height="100%"> <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/nami_writeup.pdf">click here</a> to download the PDF.</p></object> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><hr> </div></dd> <dd class="accordion-navigation"> <a class="showContent" href="#freshAirPanel"> <img class="caption works" data-caption="<h5>FreshAir</h5><p class='cap'>Air Quality Detection Interface</p>" src="images/works/freshAir.png"> </a> <div id="freshAirPanel" class="content"> <hr> <p> <a href="http://invis.io/DH1NU21KF" target="blank">FreshAir</a> is an allergy detection and alert system that maps common airborne allergens via a crowdsourced network of sensors. I designed the app interface along with Emily Lutz and Maddy Butzbach as part of <a href="https://classes.cornell.edu/browse/roster/FA14/class/INFO/3450">INFO 3450 - Human Computer Interaction</a>. </p><p> Our task was to solve a problem facing the world today by designing a novel system utilizing any technology that would be feasible within the next 10 years. After an interesting brainstorming session where we tossed around over 100 ideas (two words: bubble boy), we chose to tackle seasonal allergies through a detection and alert system composed of a wearable sensor and a mobile app. The sensors would be carried at all times to gather continuous air quality data throughout the day, which would be aggregated and transformed into an interactive map with overlays depicting the locations of relevant allergens. </p><p> We broke up potential users into four personas: <ol> <li>Mild allergy sufferer</li><li>Severe allergy sufferer</li><li>Asthma-sufferer from polluted area</li><li>Non-allergy sufferer</li></ol> </p><p> We asked them all sorts of questions such as <i>What is your worst experience/memory related to allergies?</i> and <i>What measures do you take to prevent and/or stop allergy attacks from happening?</i> to find out when, where, and how often they are affected by allergies/pollution as well as their degree of adversion to discover current motivations and techniques for handling them. We thought it would be interesting to interview a non-allergy sufferer as well to see if they had any additional insight or could think of other potential uses for this kind of system. After interviewing people fitting these personas, we constructed a Work Affinity Activity Diagram to group common themes from different responders. (Click the picture below for a higher fidelity PDF) </p><div class="screenshotContainer"> <a href="#" data-reveal-id="waadModal"><img class="caption screenshot" alt="Work Activity Affinity Diagram (WAAD)" src='images/screenshots/waad.jpg'></a> </div><div id="waadModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <object data="documents/WAAD.pdf" type="application/pdf" width="100%" height="100%"> <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/WAAD.pdf">click here</a> to download the PDF.</p></object> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><!-- <div class="screenshotContainer"> <img class="caption screenshot" src="images/screenshots/waadPicFull.jpg" alt="waad paper"> </div>--> <p> Through persona interviews, we found that people would not be willing to carry around a clunky sensor, especially since it had to be exposed at all times. We interviewed a wearable technology expert at Cornell University who said that although these types of sensors are not quite small enough today, the technology should evolve to the point where they can be accessorized into earrings, necklaces, and bracelets. This way, people could make a fashion statement by equipping everyday accessories with stylish, high-tech sensors. </p><p> From here, I storyboarded '<a href="#" data-reveal-id="storyboardModal">A day in the life of John</a>' (our allergy sufferer), and we each created low-fidelity mockups of proposed concept designs. </p><div class="screenshotContainer"> <img id="freshAirConcept" class="caption screenshot" alt="Sensor/App/Glasses Proposed Concept" src='images/screenshots/finalConcept.png'> </div><div class="screenshotContainer"> <img id="glassesConcept" class="caption screenshot" alt="Glasses Concept" src='images/screenshots/glassesConcept.jpg'> </div><div id="storyboardModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <img src="images/screenshots/storyboard.jpg" alt="Storyboard"> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><p> We thought it would be cool to add in a <a href="http://youtu.be/sP0WNX1AxVs">glasses component</a> that would highlight affected areas through a colored overlay projected directly through the lens. It would take in the same data used for the map to cover your entire field of vision so that as you look around, you can see exactly where the affected areas are. This technology would ideally integrate directly with any pair of glasses you owned, and the overlay feature could be turned on/off to the user's liking. After performing concept validation on our test personas, the glasses and the map proved popular. They liked how the glasses provided immediate information about their surroundings, which complemented the ability to plan routes around affected areas in advance by using the map. </p><div class="screenshotContainer"> <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses1.jpg'> </div><div class="screenshotContainer"> <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses2.jpg'> </div><div class="screenshotContainer"> <img class="glasses caption screenshot" alt="Filming Glasses Demonstration" src='images/screenshots/glasses3.jpg'> </div><p> After finalizing our concept, we drew sketches and wireframes of the app and produced high fidelity mockups in Photoshop and Illustrator to put together an interactive <a href="http://invis.io/DH1NU21KF" target="blank">prototype</a> using <a href="http://www.invisionapp.com/">InVision</a>. You can view our poster for presentations <a href="#" data-reveal-id="freshAirModal">here</a>. </p><div id="freshAirModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <object data="documents/poster.pdf" type="application/pdf" width="100%" height="100%"> <p>It appears you don't have a PDF plugin for this browser. No biggie... you can <a href="documents/poster.pdf">click here</a> to download the PDF.</p></object> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div><hr> </div></dd> <dd class="accordion-navigation"> <a class="showContent" href="#tdsPanel"> <img class="caption works" data-caption="<h5>3 Day Startup</h5><p class='cap'>Hack Together A Startup In One Weekend</p>" src="images/works/3ds.png"> </a> <div id="tdsPanel" class="content"> <hr> <p> I was selected to participate in Cornell's <a href="http://cornell.3daystartup.org/">3 Day Startup</a> this past fall along with 40 other driven, entrepreneurial students. Out of over 40 ideas pitched, mine was selected through a blind vote as one of five startups to be pursued over the weekend. I led my team through the stages of the <a href="http://theleanstartup.com/principles">Lean Startup Method</a> by identifying the target market, performing customer validation, fine-tuning the business model, and developing on an MVP. The idea was simple - bring the thrill of sports betting to mobile gaming through a cash-based leaderboard system. </p><div class="screenshotContainer"> <img class="caption screenshot" alt="Pitch During Brainstorming Session" src='images/screenshots/3ds_day1.jpg'> </div><p> After 52 grueling hours, I pitched the business to a panel of 6 Venture Capitalists, entrepreneurs, and mentors in front of an audience of over 150. All in all, it was a thrilling experience where I got a glance into the fast-paced startup world by picking the brains of Cornell's best and brightest and a group of awesome mentors who are out in the field. </p><div class="screenshotContainer"> <img class="caption screenshot" alt="Answering Questions During Final Pitches" src='images/screenshots/3ds_pitch4.jpg'> </div><div class="screenshotContainer"> <img class="caption screenshot" alt="Final Pitches" src='images/screenshots/3ds_pitch3.jpg'> </div><div class="screenshotContainer"> <img class="caption screenshot" alt="Explaining Something Important (I Assume)" src='images/screenshots/3ds_pitch1.jpg'> </div><div class="screenshotContainer"> <img class="caption screenshot" alt="Wrapping Things Up" src='images/screenshots/3ds_pitch2.jpg'> </div><hr> </div></dd> <dd class="accordion-navigation"> <a class="showContent" href="#titanicPanel"> <img class="caption works" data-caption="<h5>Titanic Survival Demographics</h5><p class='cap'>How survival rate related to demograhics</p>" src="images/works/titanic.png"> </a> <div id="titanicPanel" class="content"> <hr> <p> As part of <a href="http://mimno.infosci.cornell.edu/info3300/">INFO 3300 - Data Driven Web Applications</a>, I created a visualization of passenger survival rate on the Titanic based on demographic data incuding age, social class, price of ticket, and gender. Passengers are broken up into 3 tiers based on their social class, with upper class on the top, descending to lower class on the bottom. Within each class, the points are plotted based on their ticket fare. You can view the full source code on <a href="https://github.com/GrossestMan/Titanic">Github</a>. </p><div class="screenshotContainer"> <img class="caption screenshot" alt="Titanic Visualization" src='images/screenshots/titanicFull.png'> </div><hr> </div></dd> <dd class="accordion-navigation"> <a class="showContent" href="#gePanel"> <img class="caption works" data-caption="<h5>GE Capital</h5><p class='cap'>ITLP Intern At GE Capital</p>" src="images/works/ge.png"> </a> <div id="gePanel" class="content"> <hr> <p> Last summer, I was an ITLP Intern (Information Technology Leadership Program) with GE Capital at their headquarters in Norwalk, CT. I built an IT Audit Tracker that replaced a static weekly report which was prone to human error and costly to assemble. The frontend was built on Twitter Bootstrap for interactive filtering and categorizing capabilities and the backend was built on Django. After presenting to IT Risk Executives, the CIO of GE Capital picked up the Audit Tracker for use at his weekly staff meetings. </p><div class="screenshotContainer"> <img class="caption screenshot" alt="The Summer 2014 Capital ITLP Interns At Orientation" src='images/geInterns.jpg'> </div><p> I was appointed chair of the Tech committee and organized a hackathon where 80% of the interns participated. Since we were spread out across 3 different areas (Connecticut, New Orleans, and Chicago), it was a great way to come together as a class and hack together some cool projects. My group built an interactive heat map highlighting urgent IT Issues across all global locations using <a href="https://developers.google.com/chart/interactive/docs/gallery/geochart">Geocharts</a>. </p><div class="screenshotContainer"> <img class="caption screenshot" alt="GE Interns Outdoing Ellen's Oscar Selfie" src='images/geInterns1.jpg'> </div><hr> </div></dd> <dd class="accordion-navigation"> <a class="showContent" href="#thisSitePanel"> <img class="caption works" data-caption="<h5>This Site</h5><p class='cap'>A Responsive, Mobile-First Portfolio</p>" src="images/works/this_site.png"> </a> <div id="thisSitePanel" class="content"> <hr> <p> This website is built on the <a href="http://foundation.zurb.com/">Foundation</a> framework to be fully responsive on all devices. The fancy features are the result of lots of custom CSS and Javascript on top of <a href="http://daneden.github.io/animate.css/">Animate.css</a>, <a href="http://captionjs.com/">Caption.js</a>, and of course <a href="http://jquery.com/">jQuery</a>. The full source code is available on <a href="https://github.com/GrossestMan/grossestman.github.io">GitHub</a> </p><div class="screenshotContainer"> <img class="caption screenshot" alt="Sublime Every Time" src='images/works/this_site.png'> </div><hr> </div></dd> </dl> <div class="row contact"> <hr> <div class="large-12 columns"> <h4 id="contact">Contact Me</h4> <div class="contactMe large-4 columns"> <a href="mailto:nbg22@cornell.edu"><img style="margin-top: 15px" class="icons" src="images/emailIcon.png" alt="eMail"></a> </div><div class="contactMe large-4 columns"> <a href="http://linkedin.com/pub/noah-grossman/66/355/487"><img class="icons" src="images/linkedIn.jpg" alt="LinkedIn"></a> </div><div class="contactMe large-4 columns"> <a href="https://github.com/GrossestMan"><img class="icons" src="images/GitHub-Mark-120px-plus.png" alt="GitHub"></a> </div></div></div><footer class="row"> <div class="large-12 columns"> <div class="row"> <div class="large-6 columns"> <p>© 2015 Noah Grossman</p></div></div></div></footer><!-- <p> My name is Noah Grossman and I'm a senior studying Information Science, Systems, and Technology with a minor in Business. I grew up at the Jersey Shore, just outside of Atlantic City, so I've been spoiled by the best beaches the East Coast has to offer. I originally came to Cornell as an Atmospheric Sciences major with my eyes set on becoming a Meteorologist, but soon realized a career in weather forecasting wasn't for me. I quickly switched to a Computer Science and eventually ended up in Info Sci focusing in Information Systems and Human Computer Interaction.I've got a wide range of interests, with some of my passions including game design, iOS development, and entrepreneurship. Over the past year, I've been developing a game called DASH with a group of 5 other Cornell students. The game is currently in Beta testing (come find me if you want to snag a version), and we plan on releasing on both iOS and Android this summer. I'm also working with some other Cornell students on a startup that focuses on bringing alternative sources of revenue to independent game developers.When I'm not busy working, you can find me checking the surf camera for my home break in Margate, NJ. This past winter break, I went down to a small group of islands in Panama called Bocas Del Toro (Google it, seriously...) and spent 6 days surfing world class waves in an uncrowded lineup. I still find myself imagining I'm down there eating $8 filet on the dock of some restaurant in the middle of paradise.</p><p>I like to design and build things. Right now, my main project revolves around building and marketing a tablet-based action game, DASH, which you can learn more about below.</p>--> <script src="js/descriptorAnimator.js"></script> <script src="js/app.min.js"></script> </body></html>
+<!-- Author: Noah Grossman -->
+
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Noah Grossman's Personal Portfolio">
+        <meta name="author" content="Noah Grossman">
+        <title>Noah B. Grossman</title>
+        <link rel="stylesheet" href="css/foundation/foundation.min.css" />
+        <link rel="stylesheet" href="css/portfolioTemplate.css">
+        <link rel="stylesheet" href="css/vendor/animate.css">
+        <link rel="stylesheet" href="css/vendor/captionjs.min.css"/>
+        <link rel="stylesheet" href="css/accordionEdits.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300|Source+Code+Pro:300|PT+Serif' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr.js"></script>
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/fastclick.js"></script>
+        <script src="js/vendor/jquery.caption.min.js"></script>
+        <script src="js/foundation/foundation.min.js"></script>
+        <script src="js/foundation/foundation.accordion.js"></script>
+        <script src="js/vendor/isInViewport.min.js"></script>
+    </head>
+    <body>
+      <div class="row">
+        <div class="small-12 medium-4 large-6 columns namelogo">
+          <h1>Noah Grossman</h1>
+        </div>
+        <div class="small-12 medium-8 large-6 columns">
+          <div class="nav-bar">
+            <ul id="navButtons" class="button-group">
+              <li><a href="#about" class="button">About</a></li>
+              <li><a href="#work" class="button">Portfolio</a></li>
+              <li><a href="#" class="button" data-reveal-id="resumeModal">Resume</a></li>
+            </ul>
+            <div id="resumeModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <object data="documents/NBG Resume.pdf" type="application/pdf" width="100%" height="100%">
+                        <p>It appears you don't have a PDF plugin for this browser. You can <a href="documents/NBG Resume.pdf">click here</a> to download the PDF.</p>
+                    </object>   
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="hero">
+        <div class="row">
+          <div class="large-12 columns intro-text">
+            <p id='descriptor'>Personal Portfolio</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row about" id="about">
+       <div class="container">
+        <div class="medium-4 large-4 columns" id="facePic">
+          <img src="images/NBG Profile Pic.png">
+        </div>
+        <div class="medium-8 large-8 columns">
+          <h2>About</h2>
+          <p>
+            Hi, I'm Noah. I'm a product manager with experience in engineering, design, customer support, and project management. My varied background helps me interface across a software company to drive development teams towards business goals.
+          </p>
+          <p>
+            I am currently the product lead for Dash, a flight-action game that fuses '80s-style difficulty with an ancient japanese aesethetic. The game features an original soundtrack and a beautifully hand-drawn landscape.
+          </p>
+        </div>
+       </div>
+      </div>
+
+      <div class="row work" id="work">
+       <div class="container">
+        <div class="large-12 columns">
+          <h2>Portfolio</h2>
+
+          <dl id='listOfWork' class="accordion small-block-grid-1 medium-block-grid-2 large-block-grid-3" data-accordion>
+
+            <!-- DASH -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#dashPanel">
+                <img class="caption works" data-caption="<h5>DASH</h5><p class='cap'>A Cross-Platform Flight-Action Game</p>" src="images/works/dash-transparent.png">
+              </a>
+              <div id="dashPanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td><a href="https://goo.gl/forms/k95RbmEFwZKlerDP2" target="_blank">Dash</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>Project Lead</td>
+                        </tr>
+                        <tr>
+                            <td><b>Industry</b></td>
+                            <td>Indie Gaming, Mobile</td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                Multi-platform mobile game coming soon to iOS and Android
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>Kotlin, Java</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Dash</h3>
+                <p class="blurb">
+                    Dash is a fast-paced flight‐action game coming soon to Android and iOS. You play an agile bird who is constantly falling, and the only way to stay afloat is by dashing to enemies who are trying to kill you. Rekindle a world plagued by darkness by finding and lighting the golden lanterns.
+                </p>
+                <p class="blurb">
+                    Dash won the Audience Favorite and Most Polished game awards at Cornell’s <a href="http://gdiac.cs.cornell.edu/gallery/download.php?name=dash">2014 GDIAC showcase</a> and is rated as the <a href="http://gdiac.cs.cornell.edu/gallery/index.php">#1 most popular game</a> of the 100+ games to come out of Cornell's game design program. Dash was also presented at the 2014 Boston Festival of Indie Games, where it was featured on several indie game news sites.
+                </p>
+                <p class="blurb">
+                    As project lead, I own the product roadmap and help the team prioritize work for development cycles. I also lead level design and user testing.
+                </p>
+                <div class="row chunk">
+                    <div class="medium-7 large-7 columns work-prj frame right">
+                      <video loop>
+                        <source src="images/works/video/dash-lanterns.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="medium-5 large-5 columns">
+                      <h4>Level Design</h4>
+                      <p>
+                        Dash has a steep learning curve. Exploration is a common theme throughout the game, so we teach the game’s unique dashing mechanics and challenges through trial and error in lieu of obstrusive text-based tutorials.
+                      </p>
+                      <p>
+                        Here, I teach the player that you need to dash to enough lanterns to light up the golden lantern in order to beat the level.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-7 large-7 columns work-prj frame left">
+                      <video loop id="2x">
+                        <source src="images/works/video/dash-editor.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="medium-5 large-5 columns">
+                      <h4>Create Your Own Levels</h4>
+                      <p>
+                        We built a custom level editor into the game to rapidly test and release levels.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-7 large-7 columns work-prj frame right">
+                      <video loop>
+                        <source src="images/works/video/dash-slalom.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="medium-5 large-5 columns">
+                      <h4>Fast-Paced Action</h4>
+                      <p>
+                        Dash requires quick reflexes and will test your timing and reaction speed.
+                      </p>
+                    </div>
+                </div>
+                <p class="blurb">
+                    Dash is coming to Android and iOS phones and tablets this fall under the name FireFlight.
+                    <a href="https://goo.gl/forms/raxrehrSL7EVHhUm2">Sign up</a> as a Beta tester to get your hands on an early copy!
+                </p>
+              </div>
+            </dd>
+
+
+
+            <!-- Epic -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#epicPanel">
+                  <img class="caption works" data-caption="<h5>Epic</h5><p class='cap'>EHR Software PM & Support</p>" src="images/works/epic.png" style="margin: 5px -5px -5px 5px;">
+              </a>
+              <div id="epicPanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Company</b></td>
+                            <td><a href="https://www.epic.com/">Epic Systems</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td><a href="https://epic.avature.net/Careers/FolderDetail/Verona-Wisconsin-United-States-Technical-Problem-Solver/742">Technical Services Engineer</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Industry</b></td>
+                            <td>Healthcare (Electronic Medical Records)</td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                <a href="#epicProduct">Product</a>: <div class="large-12 columns">Product / Project  management, UI/UX design</div>
+                                <br>
+                                <a href="#epicClient">Client</a>: <div class="large-12 columns">Epic technical strategy and support for the surgery departments at Cleveland Clinic, Premier Health Partners, and Hartford Healthcare</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>Balsamiq, Illustrator, HTML, CSS, Javascript, M, Epic OpTime / Anesthesia / Orders / Grand Central</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 id="epicProduct">Epic: Product</h3>
+
+                <p class="blurb">
+                    Epic makes medical record software that holds patient records for over 58% of Americans. I worked closely with surgery product (OpTime) leadership to lead product initiatives and design new features.
+                </p>
+                <div class="row chunk">
+                    <div class="medium-6 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/upgrade button.jpg">
+                    </div>
+                    <div class="medium-6 large-7 columns">
+                      <h4>Launched Upgrade Tool Saving 10,000+ Client Hours</h4>
+                      <p>
+                        There was a critical visual issue in the 2017 release discovered a few weeks before the first client upgrade. Each client was uniquely affected by a change to the system's icons and we needed a quick solution. I was brought on to interface with the design teams and clients closest to the issue.
+                      </p>
+                      <p>
+                        After analyzing client usage data, I found that the average client only used 5% of available icons in the system, so I proposed building an identification and prioritization tool to narrow issue scope. I quickly designed and launched the tool with support engineers from our first client upgrades before rolling it out across all upgrading customers. The tool worked very well for OpTime, so I expanded the scope across all clinical applications and created a process for all support engineers to follow.
+                      </p>
+                      <p>
+                        In the end, we collectively saved over 10,000 client hours during their busy upgrade season.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-6 large-5 columns work-prj left">
+                      <img src="images/works/klas optime.svg">
+                    </div>
+                    <div class="medium-6 large-7 columns">
+                      <h4>Led Visual Redesign of Epic OpTime</h4>
+                      <p>
+                        There was a company-wide initiative to redesign the look and feel of Epic's software in the 2016 release. Major components of each application were redesigned, but custom application code created unique visual issues for each product. I led the OpTime project to discover, prioritize, and fix visual issues affecting the product. 
+                      </p>
+                      <!-- <p>
+                        There was a company-wide initiative to redesign the look and feel of Epic's software in the 2016 release. Each product needed a project lead to ensure their application was shipped free of visual issues. I led the OpTime project.
+                      </p> -->
+                      <p>
+                        I recruited a QA team to discover product layout, formatting, and style issues across the product, which I actively triaged and delegated based on impact and development effort. Many issues affected multiple products, so I had to delegate to and work with designers, engineers, and product leads across the company. In the end, my teams discovered and fixed hundreds of visual issues that affected the core product for the 2016 release.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-6 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/works/surgery.jpg">
+                    </div>
+                    <div class="medium-6 large-7 columns">
+                      <h4>Designed New OpTime Surgery Workflows and Features</h4>
+                      <p>
+                        I worked with users, subject matter experts, and engineers to create wireframes and mockups for new surgery workflows and features. Due to copyright, I am unable to show them here.
+                        <ul>
+                            <li>Redesigned surgeon case ordering workflow to be more efficient and visually pleasing. Introduced new case edit feature to reduce duplicate case scheduling.</li>
+                            <li>Redesigned top-down navigation across the OpTime product to increase documentation efficiency and usability. Added quick-documentation features to visualize and document patient info based on current workflow context.</li>
+                            <li>Redesigned procedure ordering screen to be more structured and intuitive.</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+
+
+                <h3 id="epicClient">Client</h3>
+
+                <p class="blurb">
+                    As a technical services (TS) engineer, I partnered with large hospital systems to guide their Epic OpTime technical strategy and long-term support.
+                </p>
+                <div class="row chunk">
+                    <div class="medium-6 large-5 columns work-prj left" style="margin: 30px 0">
+                      <img src="images/works/3 clients.png">
+                    </div>
+                    <div class="medium-6 large-7 columns">
+                      <h4>3 Primary Clients</h4>
+                      <p>
+                        I worked with Cleveland Clinic, Premier Health Partners, and Hartford Healthcare to guide their long-term technical strategy and support.
+                        <ul>
+                            <li>Prioritized and solved open issues in their backlog</li>
+                            <li>Led weekly meetings with the OpTime analyst team and mentored team members during one-on-ones</li>
+                            <li>Led teams through 3 upgrades, 8 roll-outs, and a first-ever Go-Live.</li>
+                            <li>Led downtime preparadness for Premier Health Partners</li>
+                        </ul>
+                      </p>
+                    </div>
+                </div>
+
+                <div class="row chunk">
+                    <div class="medium-6 large-5 columns work-prj frame right">
+                      <img src="images/works/surgery.jpg">
+                    </div>
+                    <div class="medium-6 large-7 columns">
+                      <h4>15 Go-Lives</h4>
+                      <p>
+                        I traveled onsite to 15 customer Go-Lives to help users learn how to use the system. As Epic floor support, I joined surgeons and nurses during live cases in the OR to train them on their new workflows and to triage incoming issues with the Epic command center. By working directly with end users, I was able to better empathize with and advocate for their position during design and support discussions.
+                      </p>
+                    </div>
+                </div>                
+              </div>
+            </dd>
+
+
+
+
+
+            <!-- Revibe -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#revibePanel">
+                  <img class="caption works" data-caption="<h5>Revibe</h5><p class='cap'>Employee Analytics Platform</p>" src="images/works/revibe.png">
+              </a>
+              <div id="revibePanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td>Revibe</td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>Head of Product</td>
+                        </tr>
+                        <tr>
+                            <td><b>Program</b></td>
+                            <td><a href="http://www.birthrightisraelexcel.com/PDF/FAQ/ExcelVentures-SummerBooklet.pdf">Birthright Excel Ventures</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                Employee Analytics Platform created during startup pre-accelerator based in Tel Aviv, Israel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>Axure</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Revibe</h3>
+                <p class="blurb">
+                    Revibe was a project built over the course of a 10-week pre-accelerator in Tel Aviv, Israel. From over 2,000 applicants, I was accepted as one of 20 to build startup projects with Israeli peers under the guidance of Israeli Venture Capitalists and business leaders.
+                </p>
+                <p class="blurb">
+                    Revibe was a workplace analytics platform that improved employee retention by diagnosing employee engagement issues. Inspired by our own observations at work, we built it as a tool for management consultants to provide actionable management insights backed by intelligence technology used by the Israeli military.
+                </p>
+                <p class="blurb">
+                    As Head of Product, I led the product strategy through discovery, validation, and MVP.
+                </p>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/upgrade button.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Team Formation</h4>
+                      <p>
+                        The first two weeks were some of the most formative. We completed a number of team-building competitions in rotating groups to find compatible cofounders. The challenges tested our skills from sales: “You have 3 hours to turn 50 shekel (~15 USD) into as much money as possible,” to product sense: “Create an IOT company and pitch it to a panel of VCs who will be coming by this afternoon.” The intense pressure quickly narrowed our focus towards team members with similar interests and different skillsets.
+                      </p>
+                      <p>
+                        By the end of week 2, I had recruited a team with deep experience in sales, product, and engineering.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame left">
+                      <img class="borderImg" src="images/upgrade button.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Discovery</h4>
+                      <p>
+                        Having all worked for large companies, my team was interested in understanding the relationship people have with work. We found it interesting that the majority of HR startups are so heavily focused on recruiting the best talent, but there are very few aimed at actually retaining the very employees companies work so hard to recruit. According to Harvard Business Review, employee turnover costs American companies over $30 billion every year, so we set out understand why this was such a big problem.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/upgrade button.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Validation</h4>
+                      <p>
+                        I interviewed dozens of managers and HR professionals in Israel and America and learned that they were often caught by surprise when an employee would quit. Losing good talent can disrupt an entire team, and managers were willing to pay to know which employees were at risk of leaving and why. Because of market size, favorable privacy laws, and feedback from customer interviews, we narrowed our early users to be managers at large (5,000+) American companies.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame left">
+                      <img class="borderImg" src="images/upgrade button.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>MVP</h4>
+                      <p>
+                        Through several rounds of prototyping, I created an interactive prototype that identified employee engagement issues. Using a blend of network communication analysis and feedback pulse surveys, Revibe would capture both the quantitative and the qualitative side of engagement to uncover deep organizational insights. Managers and HR leaders could use Revibe to answer crucial questions about a workforce:
+                      </p>
+                      <ul>
+                        <li>Why are employees leaving at the 2-year mark?</li>
+                        <li>Which teams are the most productive, and why?</li>
+                        <li>Which employees should we tap for leadership positions?</li>
+                        <li>Which employees do people turn to for the answers (i.e experts)?</li>
+                      </ul>
+                    </div>
+                </div>
+                <p class="blurb">
+                  By the end of the program, we had a working prototype and a number of potential clients that were interested in our product. We decided to pursue other projects post-program, but gained direct experience creating, marketing, and launching an enterprise product.
+                </p>
+
+
+            
+
+            <!--                           TO DO
+
+                Add a color key (or some kind of content identifier / separator) that highlights your most impressive experience
+
+                Filter by type of work (tags)
+                    - Product
+                    - Project
+                    - Working with clients
+                    - Design
+
+                Break up by timeline / type of experience
+                    - Work experience
+                    - Professional projects
+                    - Class projects / College
+            -->
+
+
+
+
+
+            <!-- GE -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#gePanel">
+                  <img class="caption works" data-caption="<h5>GE Capital</h5><p class='cap'>ITLP Internship At GE Capital</p>" src="images/works/ge.png">
+              </a>
+              <div id="gePanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Company</b></td>
+                            <td><a href="https://www.gecapital.com/">GE Capital</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td><a href="https://www.ge.com/careers/working-at-ge/digital-technology-leadership-program">ITLP (Information Technology Leadership Program) Intern</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Industry</b></td>
+                            <td>Financial Services</td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                Software development, IT Leadership, and Business Acumen
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>Django, HTML, CSS, Javascript / JQuery</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>GE Capital</h3>
+                <p class="blurb">
+                  I worked with GE Capital’s IT Risk team as an ITLP (Information Technology Leadership Program) intern. It was a mix of software development and IT Leadership.
+                </p>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/geInterns1.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Launched Hackathon That Produced 6 New Company Applications</h4>
+                      <p>
+                        As chair of the intern Tech Committee, I organized a hackathon where 80% of program interns participated. By bringing our intern class together from locations in Connecticut, New Orleans, and Chicago, we produced 6 new applications for the company and networked with people in other offices.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame left">
+                      <img class="borderImg" src="images/geInterns.jpg">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Developed IT Audit Tracker for GE Capital Executives</h4>
+                      <p>
+                        During the summer, I independently developed an IT Audit Tracker for GE Capital executives to monitor IT risks. I learned that the CIO was manually assembling a weekly report to keep a pulse on business IT risks, which took very long to assemble and was prone to human error. After developing and presenting the tool to the executive team, the CIO integrated the Audit Tracker into his weekly staff meetings. I developed the tool using HTML/CSS/Javascript and Django.
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </dd>
+
+
+
+
+
+
+
+            <!-- 3DS -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#tdsPanel">
+                  <img class="caption works" data-caption="<h5>Ladder</h5><p class='cap'>E-sports Competition Platform</p>" src="images/works/3ds.png">
+              </a>
+              <div id="tdsPanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td>Ladder</td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>Project Lead</td>
+                        </tr>
+                        <tr>
+                            <td><b>Program</b></td>
+                            <td><a href="http://3daystartup.org/">3 Day Startup</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                E-sports competition platform created during startup hackathon
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Ladder</h3>
+
+                <p class="blurb">
+                    Ladder was a project built over the course of three days during the 2014 Cornell 3 Day Startup weekend. Based on my game development experience, I knew how hard it was to successfully monetize mobile games, especially without antagonizing users. I saw an opportunity to boost engagement through competitive cash tournaments and was accepted into <a href="http://cornell.3daystartup.org/">3 Day Startup at Cornell</a>, where my idea was voted as one of five projects to be developed during the event.
+                </p>
+                <p class="blurb">
+                    As project lead, I recruited a team of 4 to build out the business model and a prototype before pitching in front of a panel of Venture Capitalists and entrepreneurs and an audience of 150+.
+                </p>
+
+                <!-- Pics -->
+                <div class="row chunk" style="margin-bottom: auto !important;">
+                    <div class="medium-6 large-6 columns work-prj frame left">
+                      <img class="borderImg" src="images/screenshots/3ds_day1.jpg">
+                    </div>
+                    <div class="medium-6 large-6 columns work-prj frame right">
+                      <img class="borderImg" src="images/screenshots/3ds_pitch4.jpg">
+                    </div>
+                </div>
+                <div class="row chunk" style="margin-top: 15px !important;">
+                    <div class="medium-6 large-6 columns work-prj frame left">
+                      <img class="borderImg" src="images/screenshots/3ds_pitch3.jpg">
+                    </div>
+                    <div class="medium-6 large-6 columns work-prj frame right">
+                      <img class="borderImg" src="images/screenshots/3ds_pitch1.jpg">
+                    </div>
+                </div>
+              </div>
+            </dd>
+
+
+
+
+
+
+
+
+
+            <!-- NAMI FL -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#namiPanel">
+                  <img class="caption works" data-caption="<h5>NAMI Finger Lakes</h5><p class='cap'>Website Redesign</p>" src="images/works/nami_fl.png">
+              </a>
+              <div id="namiPanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td>NAMI Finger Lakes Website</td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>Project Lead / Web Developer</td>
+                        </tr>
+                        <tr>
+                            <td><b>Course</b></td>
+                            <td><a href="http://courses.cornell.edu/preview_course_nopop.php?catoid=18&coid=239860">INFO 2300: Intermediate Web Programming and Design</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                Redesigned a local Ithaca nonprofit's website
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>PHP, MySQL, Balsamiq, HTML, CSS, Javascript / JQuery</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>NAMI Finger Lakes</h3>
+                <p class="blurb">
+                    I built a <a href="nami_static/index.html">custom website</a> for a local Ithaca nonprofit as part of a wed development class. Our client wanted their web presence to draw donations the community and be more visually appealing.
+                </p>
+                <p class="blurb">
+                    As project lead, I was the primary point of contact with the client and translated their needs into wireframes and mockups. I also designed the <a href="#" data-reveal-id="erModal">database schema</a> for a MySQL database holding library books on file and implemented much of the site’s PHP backend.
+                </p>
+                <div id="erModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                    <img src="images/screenshots/nami_er_diagram.png" alt="ER Diagram">    
+                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                </div>
+
+                <!-- Pics -->
+                <div class="row chunk" style="margin-bottom: auto !important;">
+                    <div class="medium-6 large-6 columns work-prj frame left">
+                      <img class="borderImg" src="images/screenshots/nami_before.png">
+                    </div>
+                    <div class="medium-6 large-6 columns work-prj frame right">
+                      <img class="borderImg" src="images/works/nami_fl.png">
+                    </div>
+                </div>
+                <div class="row chunk" style="margin-top: auto !important;">
+                    <div class="medium-6 large-6 columns work-prj frame left imgCap">
+                      Before
+                    </div>
+                    <div class="medium-6 large-6 columns work-prj frame right imgCap">
+                      After
+                    </div>
+                </div>
+              </div>
+            </dd>
+
+
+
+
+
+
+            <!-- FreshAir -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#freshAirPanel">
+                  <img class="caption works" data-caption="<h5>FreshAir</h5><p class='cap'>Air Quality Detection Interface</p>" src="images/works/freshAir.png">
+              </a>
+              <div id="freshAirPanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td><a href="http://invis.io/DH1NU21KF">FreshAir</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>UI / UX Designer</td>
+                        </tr>
+                        <tr>
+                            <td><b>Course</b></td>
+                            <td><a href="https://classes.cornell.edu/browse/roster/FA14/class/INFO/3450">INFO 3450 - Human Computer Interaction</a></td>
+                        </tr>
+                        <tr>
+                            <td><b>Description</b></td>
+                            <td>
+                                Designed an allergy detection and alert app
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>Photoshop, Illustrator, Invision</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>FreshAir</h3>
+                <p class="blurb">
+                  Seasonal allergies affect over 40 million Americans every year. My project team wanted to create something that helped people cope with indoor and outdoor allergies, so we designed an allergy identification and alert system called FreshAir. I designed the app interface along with Emily Lutz and Maddy Butzbach as part of INFO 3450 - Human Computer Interaction. 
+                </p>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/screenshots/finalConcept.png">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>How It Works</h4>
+                      <p>
+                        The system works via a crowdsourced network of wearable and deployed sensors that continuously monitor air quality. Through persona interviews, we found that people often do not know what they are allergic to, and therefore what to avoid. By documenting allergic reactions in the FreshAir app, the system can identify what you are allergic to so you are better prepared both in the household and outdoors.
+                      </p>
+                    </div>
+                </div>
+                <div class="row chunk">
+                    <div id="demo" class="small-12 medium-5 large-5 columns left" style="height: 600px;">
+                      <iframe width="410" height="870" style="-ms-zoom: 0.65; -moz-transform: scale(0.65); -moz-transform-origin: 0 0; -o-transform: scale(0.65); -o-transform-origin: 0 0; -webkit-transform: scale(0.65); -webkit-transform-origin: 0 0;" src="https://invis.io/EP1NU22HN" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <h4>Interactive Demo</h4>
+                        <ul>
+                          <li>Sensor: current air quality data</li>
+                          <li>Map: map of local allergen density</li>
+                          <li>Reaction: document an allergic reaction</li>
+                          <li>News: local allergen reports and news</li>
+                          <li>Profile: your allergen profile and history</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </dd>
+
+
+
+
+            
+
+            <!-- This Site -->
+            <dd class="accordion-navigation">
+              <a class="showContent" href="#thisSitePanel">
+                  <img class="caption works" data-caption="<h5>This Site</h5><p class='cap'>A Responsive, Mobile-First Portfolio</p>" src="images/works/this_site.png">
+              </a>
+              <div id="thisSitePanel" class="content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><b>Project</b></td>
+                            <td>This Portfolio</td>
+                        </tr>
+                        <tr>
+                            <td><b>Role</b></td>
+                            <td>Designer and Developer</td>
+                        </tr>
+                        <tr>
+                            <td><b>Technologies</b></td>
+                            <td>HTML, CSS, Javascript / JQuery</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>This Portfolio</h3>
+                <div class="row chunk">
+                    <div class="medium-5 large-5 columns work-prj frame right">
+                      <img class="borderImg" src="images/works/this_site.png">
+                    </div>
+                    <div class="medium-7 large-7 columns">
+                      <p>
+                        This website is built on the <a href="http://foundation.zurb.com">Foundation</a> framework to be responsive on devices of all sizes. Credit to <a href="https://captionjs.com/">Caption.js</a> for image captioning and to Viewport.js for helping videos to pause/play when in the browser’s viewport. The full source code is available on <a href="https://github.com/GrossestMan/grossestman.github.io">GitHub</a>
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+       </div>
+      </div>
+      <footer class="row">
+        <div class="container">
+          <div>
+            Designed and built by Noah Grossman | <a href="https://www.linkedin.com/in/noah-grossman-48735566/">LinkedIn</a>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="js/viewport.js"></script>
+    </body>
+</html>

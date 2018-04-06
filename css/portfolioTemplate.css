@@ -1,10 +1,7 @@
+/*Author: Noah Grossman*/
+
 body {
-	font-family:'Raleway', Helvetica, Arial, sans-serif;
-	font-weight: 400;
 	background-color: rgba(0,0,0,0.02);
-}
-.button {
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 .button-group li {
 	padding-top: 3%;
@@ -33,6 +30,15 @@ body {
 		padding-bottom:20px;
 	}
 }
+body, h1, h2, h3, h4, p, .button {
+	/*font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-family: Avenir, Lato, Raleway, Helvetica Neue, Arial, sans-serif;
+	font-weight: lighter;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
 .namelogo h1 {
 	font-size:1.5em;
 	font-weight:600;
@@ -56,6 +62,10 @@ body {
 	box-shadow:inset 0px 0px 0 2000px rgba(0,0,0,0.15);
 	height:80%;
 }
+.container {
+	max-width: 62.5rem;
+	margin: auto;
+}
 .intro-text {
 	padding-top:40%;
 	color:rgba(255,255,255,1);
@@ -75,27 +85,119 @@ body {
 	font-family:'Shadows Into Light',cursive;
 	font-size:44px;
 }
+p {
+	font-weight: lighter;
+}
 .about, .work, .contact {
-	padding:50px 0 0 0;
+	/*padding:250px 0 0 0;*/
+	padding:175px 0;
+	max-width: none;
 }
 .about img {
-	width:250px;
+	min-width:226px;
 	height:250px;
-	border-radius:150px;
-	-webkit-border-radius:150px;
-	-moz-border-radius:150px;
-}
-.work img:hover {
-	opacity:0.6;
-	-webkit-transition:0.3s ease;
-	-moz-transition:0.3s ease;
-	-ms-transition:0.3s ease;
-	-o-transition:0.3s ease;
-	transition:0.3s ease;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
 }
 .work li {
 	height:140px;
 	overflow:hidden;
+}
+.work {
+	background-color: #219673;
+}
+.work p, .work ol, .work h1, .work h2, .work h3, .work h4, li {
+	color: white;
+}
+video {
+	width: 100%;
+	display: block;
+	margin: auto;
+	border: 1px solid #8a4419;
+	border-style: inset;
+}
+.frame {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    padding: 10px;
+    background: white;
+}
+.blurb {
+	margin: 30px;
+}
+h2, h3 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.work .accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+	background-color: #219673;
+}
+dd {
+	/*max-width: 329px;
+	max-height: 238px;*/
+}
+.chunk {
+	margin: 125px 0 !important;
+	display: flex;
+    align-items: center;
+}
+#demo {
+	margin-left: 10%;
+}
+/*Small screen: portfolio content images float above paragraph text; tables expand to edge*/
+@media only screen and (max-width: 641px) {
+    .chunk {
+        display: inherit;
+    }
+    table {
+    	margin-left: auto !important;
+    	margin-right: auto !important;
+    }
+    #about p {
+    	text-align: center;
+    }
+}
+/*Medium & small screen: no padding on portfolio content*/
+@media only screen and (max-width: 1025px) {
+	.content {
+    	padding: auto !important;
+    }
+}
+.work-prj {
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+.imgCap {
+	background: none;
+    box-shadow: none;
+    color: white;
+}
+/*.work-prj img {
+	width: 100%;
+	max-width: 383px;
+	display: block;
+	margin: auto;
+}*/
+/*.borderImg {
+	border: 3px solid;
+    border-style: inset;
+    border-radius: 50%;
+}*/
+.left {
+	float: left;
+	margin-right: 20px;
+}
+.right {
+	float: right;
+	order: 2;
+	margin-left: 20px;
+}
+a {
+	/*color: #E8D36D*/
+	color: #EEE82C;
 }
 hr {
 	border:0;
@@ -107,9 +209,49 @@ hr {
 	opacity:0.8;
 }
 footer{
-	padding:80px 0 10px 0;
+	padding:50px 0;
+	color: #ffffff;
+	background-color: #3f3f3f;
+	text-align: center;
+}
+footer.row {
+	max-width: none;
 }
 footer a:hover {
 	color:rgba(0,0,0,0.4);
 	background-color:transparent;
 }
+table {
+	margin: 1.25rem auto;
+	background: none;
+	border-left: none;
+	border-right: none;
+	margin: 50px;
+	margin-top: 25px;
+	width: -webkit-fill-available;
+	padding: 10px 15px;
+}
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+	background: none;
+}
+table tr th, table tr td {
+	color: white;
+	font-size: 15px;
+}
+li {
+	font-size: 14px;
+}
+.showContent {
+	border-radius: 3px;
+}
+h3 {
+	margin: 75px 0 30px 0;
+	font-weight: bold;
+}
+.accordion .accordion-navigation.active>a, .accordion dd.active>a {
+	background: #fff;
+    border: 7px solid #bbbbbb;
+}
+/*table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+	line-height: 1;
+}*/

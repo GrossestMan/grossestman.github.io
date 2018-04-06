@@ -16,7 +16,7 @@ $(document).foundation({
 
 // Smooth scrolling
 // Adapted from code at http://www.paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
-var divNames = ['a[href^="#about"]', 'a[href^="#work"]', 'a[href^="#contact"]'];
+var divNames = ['a[href^="#about"]', 'a[href^="#work"]', 'a[href^="#contact"]', 'a[href^="#epicClient"]', 'a[href^="#epicProduct"]'];
 $(document).ready(function(){
 	var l = divNames.length;
 	for (var i=0; i<l; i++) {
@@ -46,9 +46,6 @@ $("dd a.showContent").click(function () {
         content.slideDown(500);
     }
 });
-
-
-
 
 
 
@@ -91,4 +88,6 @@ $(window).load(function() {
 		w.style.marginTop = topOffset + 'px';
 	}
 
+    //Fast video play
+    document.getElementById("2x").playbackRate = 2;
 });

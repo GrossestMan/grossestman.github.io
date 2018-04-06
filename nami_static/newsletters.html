@@ -34,7 +34,6 @@
           <a href="aboutus.html" class="dropdown-toggle disabled" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="aboutus.html#history">History</a></li>
-			<li><a href="aboutus.html#yearataglance">Year at a Glance</a></li>
             <!--<li><a href="aboutus.html#people">People</a></li>-->
             <li><a href="aboutus.html#contact">Contact</a></li>
           </ul>
@@ -66,7 +65,6 @@
             <li><a href="resources.html#emergency">Emergency</a></li>
             <li><a href="resources.html#donate">Donate</a></li>
             <li><a href="resources.html#getinvolved">Get Involved</a></li>
-            <li><a href="resources.html#booksearch">Library</a></li>
           </ul>
         </li>
 	  </ul>
@@ -94,7 +92,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 			<h2 style="text-align: center;">Newsletters</h2>
 			<div class="well" style='background:white;'>	
 				<ul>
-					<!-- <li><a target="_blank" href="newsletters/spring_13.pdf">Spring 2013</a></li>
+					<li><a target="_blank" href="newsletters/spring_13.pdf">Spring 2013</a></li>
 					<li><a target="_blank" href="newsletters/winter_12.pdf">Winter 2012</a></li>
 					<li><a target="_blank" href="newsletters/fall_12.pdf">Fall 2012</a></li>
 					<li><a target="_blank" href="newsletters/spring_12.pdf">Spring 2012</a></li>
@@ -108,7 +106,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 					<li><a target="_blank" href="newsletters/winter_07.pdf">Winter 2007</a></li>
 					<li><a target="_blank" href="newsletters/summer_06.pdf">Summer 2006</a></li>
 					<li><a target="_blank" href="newsletters/winter_06.pdf">Winter 2006</a></li>
-					<li><a target="_blank" href="newsletters/fall_05.pdf">Fall 2005</a></li> -->
+					<li><a target="_blank" href="newsletters/fall_05.pdf">Fall 2005</a></li>
 				<!--<?php
 					// Instead of displaying the links like we have above, we will generate them using the database
 					// This allows for dynamic display
@@ -191,7 +189,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 					</form>
 					<?php
 						$mysqli->close();
-					?> <!--
+					?> -->
 					<li>
 						<a target="_blank" href="newsletters/report_2009.pdf">2009 NAMI Finger Lakes Annual Report</a>
 					</li>
@@ -203,7 +201,7 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 					</li>
 					<li>
 						<a target="_blank" href="newsletters/report_2006.pdf">2006 NAMI Finger Lakes Annual Report</a>
-					</li>-->
+					</li>
 				</ul>
 			</div> <!-- .well -->
 		</div>	
@@ -404,46 +402,6 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 		document.getElementsByName("deleteReport")[0].setAttribute('type','submit');
 	</script>-->
 	
-	<h1>Upload a newsletter</h1>
-	<div class="well" style="background: white; margin-top:20px">
-		<form role="form" action="adminEdit.php" method="post" enctype="multipart/form-data">
-			<div class="form-group">
-				<label for="season">Season</label>
-				<input type="text" class="form-control" name="season" id="season" required>
-			</div>
-			<div class="form-group">
-				<label for="year">Year</label>
-				<input type="number" class="form-control" name="year" id="year" min=2005 required>
-			</div>
-			<div class="form-group">
-				<label for="newsletter">Select file:</label>
-				<input type="file" name="newsletter" id="newsletter" required>
-				<input type="submit" class="btn btn-primary btn-lg" name="uploadNewsletter" value="Upload" style="margin: 15px 0 0 0">	
-			</div>						
-		</form>
-	</div>
-	
-	<h1>Upload an annual report</h1>
-	<div class="well" style="background: white; margin-top:20px">
-		<form role="form" action="adminEdit.php" method="post" enctype="multipart/form-data">
-			<div class="form-group">
-				<label for="year">Year</label>
-				<input type="number" class="form-control" name="year" id="year" min=2005 required>
-			</div>
-			<div class="form-group">
-				<label for="report">Select file:</label>
-				<input type="file" name="report" id="report" required>
-				<input type="submit" class="btn btn-primary btn-lg" name="uploadReport" value="Upload" style="margin: 15px 0 0 0">	
-			</div>						
-		</form>
-	</div>
-	
-	<!-- TODO: Form to add (/edit?) news -->
-	
-	
-	
-	
-</div>
 
 
 <div class="footer">

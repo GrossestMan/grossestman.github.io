@@ -34,7 +34,6 @@
           <a href="aboutus.html" class="dropdown-toggle disabled" data-toggle="dropdown">About <i class="fa fa-angle-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="aboutus.html#history">History</a></li>
-			<li><a href="aboutus.html#yearataglance">Year at a Glance</a></li>
             <!--<li><a href="aboutus.html#people">People</a></li>-->
             <li><a href="aboutus.html#contact">Contact</a></li>
           </ul>
@@ -66,7 +65,6 @@
             <li><a href="resources.html#emergency">Emergency</a></li>
             <li><a href="resources.html#donate">Donate</a></li>
             <li><a href="resources.html#getinvolved">Get Involved</a></li>
-            <li><a href="resources.html#booksearch">Library</a></li>
           </ul>
         </li>
 	  </ul>
@@ -146,11 +144,10 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 
 	<div class="h1-divider" id="people"></div>
 	<div style="width:100%;overflow:hidden">
-		<h1 class="h1-col" style="width:60%">Year at a Glance</h1><h1 class="h1-col" style="width: 38%">Contact Us</h1>
+		<h1 class="h1-col" style="width: 100%">Contact Us</h1>
 	</div>
 	<div class="h1-divider"></div>
-	<div class="cols-full">
-	<div class="col-left-half">
+	<div class="cols-full" style="margin: auto 20%">
 		<!--<div class="col-half">
 		<h4><b>2012 Board of Directors:</b></h4>
 			<ul>
@@ -187,82 +184,6 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 
 
 		</div> --> <!-- .col-half -->
-		<div id="yearataglance"></div>
-		<div class="well" style="background:white;">
-		<p style="text-align:center"> Select a year to view events, newsletters, and news stories from that year. </p>
-		<form class="form-inline" role="form" action="aboutus.html#yearataglance" method="post" id="yaag">
-			<div class="form-group">
-				<label for="startdate">Year</label>
-				<input type="number" id="startdate" class="form-control" min="2005" max="2014" name="startdate"
-				<?php if( isset( $_POST['startdate'] )) echo ' value="'.$_POST['startdate'].'"'; ?>
-				>
-			</div>
-			<input type="submit" class="btn btn-primary">
-		</form>
-		<?php
-		if( isset( $_POST['startdate'] )) {
-			$mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-			if ($mysqli->
-				<!--errno) {
-				print($mysqli->error);
-				exit();
-			}
-			$year = $_POST['startdate'];
-			$newsQuery = "SELECT * FROM News WHERE year = $year";
-			$newslettersQuery = "SELECT * FROM Newsletters WHERE year = $year";
-			$reportQuery = "SELECT * FROM  Reports WHERE year = $year";
-			$newsResults = $mysqli->query($newsQuery);
-			if($newsResults) {
-				print("--><div class='h1-divider'></div>
-				<h2> News Articles from 2013</h2>
-				<div class='h1-divider'></div>
-				<!--print("<ul>");
-				$result = false;
-				while ($array = $newsResults ->fetch_row()) {
-					print("<li><p>$array[2]</p></li>");
-					//if($array[3]) print("<p>$array[3]</h2>");
-					//else print("<p> This news piece has no content.");
-					$result = true;
-				}
-				if(!$result) { print("No news for $year"); }
-				print("</ul>");
-			}
-			$newsletterResults = $mysqli->query($newslettersQuery);
-			if($newsletterResults) {
-				print("<div class='h1-divider'></div>");-->
-				<h2> Newsletters from 2013</h2>
-				<div class='h1-divider'></div> <!--
-				print("<ul>");
-				$result = false;
-				while($array = $newsletterResults->fetch_row()) {
-					print("<li><a target='_blank' href='$array[1]'>$array[2] $array[3]</a></li>");
-					$result = true;
-				}
-				if(!$result) { print("No newsletters for $year"); }
-				print("</ul>");
-			}
-			$reportResults = $mysqli->query($reportQuery);
-			if($reportResults) {
-				print("<div class='h1-divider'></div>");
-				print("--><h2> Annual report from 2013</h2>
-				<div class='h1-divider'></div><!--
-				print("<ul>");
-				$result = false;
-				while($array = $reportResults->fetch_row()) {
-					print("<li><a target='_blank' href='$array[1]'>$array[2] report</a></li>");
-					$result = true;
-				}
-				if(!$result) { print("No report for $year"); }
-				print("</ul>");
-			}
-			$mysqli->close();
-		}
-
-		?>-->
-	</div>
-
-	</div> <!-- .col-left-half -->
-	<div class="col-right-half">
 
 	<p>
 		<i class="fa fa-phone" data-toggle="tooltip" data-placement="left" title="Phone"></i> <b>(607) 273-2462</b>
@@ -290,7 +211,6 @@ Support, Education, and Advocacy for Families Struggling with Mental Illnesss
 		Ithaca, NY 14851-6544
 	</div>
 
-	</div> <!-- .col-right-half -->
 	</div> <!-- .cols-full -->
 
 	<!--<div id="yearataglance"></div>

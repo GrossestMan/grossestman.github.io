@@ -1,12 +1,12 @@
 // Author: Noah Grossman
 
 var descriptors = [
-                    'Full-Stack Web Developer',
-                    'UX Designer',
-                    'Surfer',
-                    'Game Developer',
-                    'Aspiring Entrepreneur',
-                    'Hacker'
+                    'Web Development',
+                    'UI/UX Design',
+                    'Customer Support',
+                    'Video Game Development',
+                    'Team Leadership',
+                    'Software Development'
                   ];
 var fonts = [
                 'Lato,Monaco',
@@ -64,5 +64,5 @@ $(document).ready(function() {
 // Run animation and change descriptor
 // Note- fired after bounce in AND bounce out animations, which is what the flag is used for
 $('#descriptor').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-    $('#descriptor').toggleClass('bounceInDown').toggleClass('bounceOutDown').toggleClass('delay').trigger('changeText');
+    $('#descriptor').toggleClass('bounceInDown').toggleClass('bounceOut').toggleClass('delay').trigger('changeText');
 });
