@@ -179,7 +179,7 @@ dd {
 /*Medium & small screen: no padding on portfolio content*/
 @media only screen and (max-width: 1025px) {
 	.content {
-    	padding: auto !important;
+    	padding: 0 !important;
     }
 }
 .work-prj {
