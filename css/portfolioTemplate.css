@@ -140,7 +140,12 @@ dd {
 	max-height: 238px;*/
 }
 .chunk {
-	margin: 125px 0 !important;
+	margin: 225px 0 !important;
+	display: flex;
+    align-items: center;
+}
+.chunkClose {
+	margin: 150px 0 !important;
 	display: flex;
     align-items: center;
 }
