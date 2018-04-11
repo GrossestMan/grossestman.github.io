@@ -162,6 +162,9 @@ dd {
     .chunk {
         display: inherit;
     }
+    .chunkClose {
+        display: inherit;
+    }
     table {
     	margin-left: auto !important;
     	margin-right: auto !important;
