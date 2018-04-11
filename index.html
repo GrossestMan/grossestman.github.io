@@ -25,37 +25,41 @@
     </head>
     <body>
       <div class="row">
-        <div class="small-12 medium-4 large-6 columns namelogo">
-          <h1>Noah Grossman</h1>
-        </div>
-        <div class="small-12 medium-8 large-6 columns">
-          <div class="nav-bar">
-            <ul id="navButtons" class="button-group">
-              <li><a href="#about" class="button">About</a></li>
-              <li><a href="#work" class="button">Portfolio</a></li>
-              <li><a href="#" class="button" data-reveal-id="resumeModal">Resume</a></li>
-            </ul>
-            <div id="resumeModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                    <object data="documents/NBG Resume.pdf" type="application/pdf" width="100%" height="100%">
-                        <p>It appears you don't have a PDF plugin for this browser. You can <a href="documents/NBG Resume.pdf">click here</a> to download the PDF.</p>
-                    </object>   
-                    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-                </div>
+        <div style="padding: 0 35px;">
+          <div class="small-12 medium-4 large-6 columns namelogo">
+            <h1>Noah Grossman</h1>
+          </div>
+          <div class="small-12 medium-8 large-6 columns">
+            <div class="nav-bar">
+              <ul id="navButtons" class="button-group">
+                <!-- <li><a href="#about" class="button">About</a></li> -->
+                <!-- <li><a href="#work" class="button">Portfolio</a></li> -->
+                <li><a href="https://www.linkedin.com/in/noah-grossman-48735566/" class="button">LinkedIn</a></li>
+                <li><a href="mailto: noahbgrossman@gmail.com" class="button">Email</a></li>
+                <li><a href="#" class="button" data-reveal-id="resumeModal">Resume</a></li>
+              </ul>
+              <div id="resumeModal" class="reveal-modal full" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                      <object data="documents/NBG Resume.pdf" type="application/pdf" width="100%" height="100%">
+                          <p>It appears you don't have a PDF plugin for this browser. You can <a href="documents/NBG Resume.pdf">click here</a> to download the PDF.</p>
+                      </object>   
+                      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
         
-      <div class="hero">
+      <!-- <div class="hero">
         <p id='descriptor'>Personal Portfolio</p>
-      </div>
+      </div> -->
 
       <div class="row about" id="about">
-       <div class="container">
+       <div class="container" style="padding:0 35px;">
         <div class="medium-4 large-4 columns" id="facePic">
           <img src="images/NBG Profile Pic.png">
         </div>
         <div class="medium-8 large-8 columns">
-          <h2>About</h2>
+          <!-- <h2>About</h2> -->
           <p>
             Hi, I'm Noah. I'm a product manager with 4 years of experience leading cross-functional teams. My varied background in product / project management, engineering, design, and customer support helps me drive development teams towards customer and business goals.
           </p>
@@ -711,7 +715,7 @@
                       </p>
                     </div>
                 </div>
-                <div class="row chunk">
+                <!-- <div class="row chunk">
                     <div id="demo" class="small-12 medium-5 large-5 columns left" style="height: 600px;">
                       <iframe width="410" height="870" style="-ms-zoom: 0.65; -moz-transform: scale(0.65); -moz-transform-origin: 0 0; -o-transform: scale(0.65); -o-transform-origin: 0 0; -webkit-transform: scale(0.65); -webkit-transform-origin: 0 0;" src="https://invis.io/EP1NU22HN" frameborder="0" allowfullscreen></iframe>
                     </div>
@@ -725,7 +729,40 @@
                           <li>Profile: your allergen profile and history</li>
                         </ul>
                     </div>
+                </div> -->
+                <div class="row chunk" style="margin-bottom: auto !important;">
+                    <div class="medium-3 large-3 columns work-prj frame left">
+                      <img class="borderImg" src="images/works/FA-sensor.png">
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left">
+                      <img class="borderImg" src="images/works/FA-map.png">
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left">
+                      <img class="borderImg" src="images/works/FA-news.png">
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left">
+                      <img class="borderImg" src="images/works/FA-profile.png">
+                    </div>
                 </div>
+                <div class="row chunkClose" style="margin-top: auto !important; margin-bottom: auto !important">
+                    <div class="medium-3 large-3 columns work-prj frame left imgCap">
+                      <h4>Sensor</h4>
+                      <p>Current air quality data</p>
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left imgCap">
+                      <h4>Map</h4>
+                      <p>Local allergen density</p>
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left imgCap">
+                      <h4>News</h4>
+                      <p>Local news reports</p>
+                    </div>
+                    <div class="medium-3 large-3 columns work-prj frame left imgCap">
+                      <h4>Profile</h4>
+                      <p>Your allergen profile</p>
+                    </div>
+                </div>
+
               </div>
             </dd>
 
@@ -757,13 +794,13 @@
                     </tbody>
                 </table>
                 <h3>This Site</h3>
-                <div class="row chunkClose">
+                <div class="row chunkClose" style="margin-bottom: auto !important">
                     <div class="medium-5 large-5 columns work-prj frame right">
                       <img class="borderImg" src="images/works/this_site.png">
                     </div>
                     <div class="medium-7 large-7 columns">
                       <p>
-                        This website is built on the <a href="http://foundation.zurb.com">Foundation</a> framework to be responsive on devices of all sizes. Credit to <a href="https://captionjs.com/">Caption.js</a> for image captioning and to Viewport.js for helping videos to pause/play when in the browser’s viewport. The full source code is available on <a href="https://github.com/GrossestMan/grossestman.github.io">GitHub</a>
+                        This website is built on the <a href="http://foundation.zurb.com">Foundation</a> framework to be responsive on devices of all sizes. Credit to <a href="https://captionjs.com/">Caption.js</a> for image captioning and to Viewport.js for helping videos to pause/play when in the browser’s viewport.
                       </p>
                     </div>
                 </div>
@@ -774,7 +811,7 @@
        </div>
       </div>
       <footer class="row">
-        <div class="container">
+        <div>
           <div>
             Designed and built by Noah Grossman | <a href="https://www.linkedin.com/in/noah-grossman-48735566/">LinkedIn</a>
           </div>
