@@ -30,6 +30,7 @@ p#descriptor {
 	}
 	.nav-bar {
 		text-align: center;
+		min-width: 366px;
 	}
 }
 @media only screen and (max-width: 750px) {
