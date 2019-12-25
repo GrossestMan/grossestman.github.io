@@ -14,7 +14,7 @@ body {
 }
 
 .header { height: 190px; }
-#header-right { float: left; margin-top: 40px; font-size: 26px; color: #636982; position:relative; left: 270px; width:80%; }
+#header-right { float: left; margin-top: 40px; font-size: 26px; color: #636982; left: 270px; width:80%; }
 #header-right .form-control { width: 140px; float: right;}
 .navbar-header {
 	width: 11%;
